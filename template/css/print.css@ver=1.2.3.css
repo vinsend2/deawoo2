@@ -1,0 +1,43 @@
+@media print {
+	body {
+		margin: 0;
+		color: #000;
+		background-color: #fff;
+	}
+	#sidebar, input, .contact-container, .scroll-to {
+		display: none!important;
+	}
+	a:not(.btn) {
+		text-decoration: none;
+	}
+	.top {
+		background: #fff;
+		border-bottom: none;
+	}
+	.table td, .table th {
+	    padding: 2px 8px;
+	    font-size: 9pt;
+	}
+	.col-lg-10 {
+		max-width: 100%;
+		width: 100%!important;
+		flex-basis: 100%!important;
+		flex: 0 0 100%;
+	}
+	.top-date {
+		display: inline-block;
+	}
+	.bottom-menu {
+		display: none;
+	}
+	.table {
+		margin-bottom:0;
+	}
+	#content {
+		padding-bottom: 0;
+	}
+	.table td, .table th {
+	    border-top: 1px solid #d0d0d0;
+	}
+}
+
