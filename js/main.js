@@ -132,7 +132,7 @@ $(function() {
 
 
 
-	
+
 
 
 	$('.prev-item').click(function(){
