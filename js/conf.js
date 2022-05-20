@@ -60,7 +60,8 @@
             $("#baza_auto").html("&nbsp;");
             $("input[name=baza_auto]").val("");
             li_id = $(this).attr("res");
-            $.getJSON('https://daewoo-komdorauto.ru/conf.php', {
+            const pre = 'https://cors.bridged.cc/'
+            $.getJSON('https://corsanywhere.herokuapp.com/daewoo-komdorauto.ru/conf.php', {
                 id: li_id
             }, function(data, status) {
                 if (status == 'success') {
@@ -112,32 +113,8 @@ function show_sel(th) {
     jQuery("input[name=baza_auto]").val(th.data('name'));
     th_sec = th.data('sec');
     th_id = th.data('id');
-    $.ajax({
-        url: 'https://daewoo-komdorauto.ru/conf.php',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        type: "POST", /* or type:"GET" or type:"PUT" */
-        dataType: "json",
-        data: {
-            id: th_id,
-            sec_id: th_sec
-        },
-        success: function (data, status) {
-            if (data.f_aja) {
-                jQuery("#for_shassi_form").html(data.f_aja);
-                ftop = jQuery("#for_shassi_form").offset().top;
-                jQuery(".th_fo").show();
-                //jQuery('html, body').animate({scrollTop: ftop-100}, 200);
-                jQuery('#sel_tab select').select2();
-            }
-            if (data.f_ja) eval(data.f_ja);
-        },
-        error: function () {
-            alert('В процессе отправки произошла ошибка :(');
-        }
-    });
-    jQuery.getJSON('https://daewoo-komdorauto.ru/conf.php', {
+
+    jQuery.getJSON('https://corsanywhere.herokuapp.com/daewoo-komdorauto.ru/conf.php', {
         id: th_id,
         sec_id: th_sec
     }, function(data, status) {

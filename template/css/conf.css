@@ -480,7 +480,7 @@ hover {
     text-decoration:none;
 }
 .inform-area h2 {
-    color:#292929;
+
     font-size:36px;
     line-height:38px;
     margin:0 0 22px;
@@ -718,4 +718,21 @@ hover {
         float: none;
         margin: 0;
     }
+}
+
+.tab-area .frame {
+    width: 760px;
+}
+.tabset span.active {
+    background: #1463ab;
+}
+.tabset li:first-child span.active:after {
+    border-color: transparent #1463ab;
+}
+.tabset span {
+    padding: 5px 60px;
+}
+.inform-area {
+    padding: 0 25px;
+    margin-top: 50px;
 }
