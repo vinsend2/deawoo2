@@ -825,3 +825,10 @@ a.footer-link {
 a {
 	text-decoration: auto;
 }
+.container-fluid .catalog__slider {
+	margin-top: 48px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 25px;
+}
