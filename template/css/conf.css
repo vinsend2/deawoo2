@@ -512,7 +512,7 @@ hover {
 }
 .inform_new_one {
     float:left;
-    width:31.33%;
+    width:20%;
     cursor:pointer;
     margin:0 1% 2%;
     border:1px solid #eaeaea;
@@ -735,4 +735,12 @@ hover {
 .inform-area {
     padding: 0 25px;
     margin-top: 50px;
+}
+.tabset li.style01 span.active:before {
+    border-color: transparent #1463ab;
+
+}
+.th_fo .btn {
+    color: white;
+    background-color: #1463ab;
 }
