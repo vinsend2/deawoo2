@@ -357,6 +357,27 @@ function validate(inputs) {
 	return error;
 }
 
+
+$(".accordion-head").on("click",function(e){e.preventDefault(),$(this).next().hasClass("collapsing")||($(this).toggleClass("accordion-open"),$(this).toggleClass("accordion-close"))})
+
+
+$(document).ready(function () {
+	$('.accordion-head').on('click', function (e) {
+		var next = $(this).next();
+
+		if (!$(next).is(':visible')) {
+
+			$(next).slideDown('fast');
+		} else {
+			$(next).slideUp('fast');
+		}
+
+		return false;
+	});
+
+
+});
+
 function validate_int(evt) {
   var theEvent = evt || window.event;
 
