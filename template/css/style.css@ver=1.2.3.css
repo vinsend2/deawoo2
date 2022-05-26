@@ -1449,3 +1449,139 @@ a {
 .product-details .text-block {
 	margin: 30px 0;
 }
+.dealers-list .needs-validation {
+	padding-left: 0!important;
+}
+.dealers-list .form-title {
+	margin-top: 55px;
+	display: block;
+}
+
+/* Start:/local/templates/main/assets/bx-styles/steps.css?16358550951781*/
+.steps {
+	padding: 60px 0 30px
+}
+.steps__title {
+	margin-bottom: 30px
+}
+.steps__wrap {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between
+}
+.steps__item {
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0,0,0,.07);
+	flex-grow: 0;
+	flex-shrink: 1;
+	margin-right: 24px;
+	flex-basis: calc(100% / 4 - (24px * (4 - 1))/ 4);
+	max-width: calc(100% / 4 - (24px * (4 - 1))/ 4);
+	margin-bottom: 0;
+	padding: 50px 28px
+}
+.steps__item:nth-child(5n) {
+	margin-right: 24px
+}
+.steps__item:nth-child(4n) {
+	margin-right: 0
+}
+.steps__item-title {
+	text-align: left;
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 15px
+}
+.steps__num {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #0066a9;
+	width: 60px;
+	height: 60px;
+	margin: 0 0 30px;
+	font-size: 34px;
+	font-weight: 300;
+	line-height: 1;
+	color: #0066a9;
+	padding-top: 5px
+}
+.steps__descr {
+	font-size: 13px;
+	line-height: 1.3;
+	text-align: left;
+	color: #777
+}
+@media (max-width:1023px) {
+	.steps__wrap {
+		flex-wrap: wrap
+	}
+	.steps__item {
+		flex-grow: 0;
+		flex-shrink: 1;
+		margin-right: 24px;
+		margin-bottom: 24px;
+		flex-basis: calc(100% / 2 - (24px * (2 - 1))/ 2);
+		max-width: calc(100% / 2 - (24px * (2 - 1))/ 2)
+	}
+	.steps__item:nth-child(3n) {
+		margin-right: 24px
+	}
+	.steps__item:nth-child(2n) {
+		margin-right: 0
+	}
+}
+@media (max-width:767px) {
+	.steps__item {
+		flex-grow: 0;
+		flex-shrink: 1;
+		margin-right: 0;
+		flex-basis: calc(100% / 1 - (0px * (1 - 1))/ 1);
+		max-width: calc(100% / 1 - (0px * (1 - 1))/ 1);
+		margin-bottom: 15px;
+		padding: 30px
+	}
+	.steps__item:nth-child(2n) {
+		margin-right: 0
+	}
+	.steps__item:nth-child(1n) {
+		margin-right: 0
+	}
+}
+/* End */
+.types_of_service {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.types_of_service div {
+	width: 154px;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 22px;
+	color: #353535;
+	text-align: center;
+}
+
+
+
+.types_of_service div img {
+	display: block;
+	width: 100%;
+	margin: 0 0 35px 0;
+}
+img.desktop_only {
+
+	margin: 0 auto;
+	display: block;
+	margin: 50px 0;
+}
+.services .button, .zapchasti .button {
+	max-width: 291px;
+	margin: 0 auto;
+}

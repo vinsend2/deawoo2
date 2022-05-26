@@ -104,23 +104,36 @@
 		<p class="mb-1">Московская область, городской округ Мытищи, посёлок Вёшки, Автомобильный проезд, 1с1</p>
 		<p class="mb-1"><a class="phone" href="tel:88002227088">8 800 222-70-88</a></p>
 		<p class="mb-1"><a class="phone" href="mailto:info@daewoo-truck.ru">info@daewoo-truck.ru</a></p>
+		<b class="form-title">Обратная связь с нами</b>
+		<form class="p-3 needs-validation" action="../../index.html" method="POST" name="call-back" novalidate="">
+			<div class="mb-3">
+				<label for="userName" class="form-label">Имя</label>
+				<input type="text" class="form-control" id="userName" name="userName">
+			</div>
+			<div class="mb-3">
+				<label for="userPhone" class="form-label">Телефон</label>
+				<input type="text" class="form-control required" id="userPhone" name="userPhone" required="">
+				<div class="invalid-feedback">Пожалуйста, введите номер телефона, по которумы мы сможем с вами связаться.</div>
+			</div>
+			<div class="mb-3">
+				<label for="userMessage" class="form-label">Сообщение</label>
+				<textarea class="form-control" id="userMessage" name="userMessage" rows="3"></textarea>
+			</div>
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="userAgreement" name="userAgreement" required="">
+				<label class="form-check-label" for="userAgreement">Соглашаюсь с <a href="../../privacy.html">условиями обработки персональных данных</a></label>
+				<div class="invalid-feedback">Согласие на обработку персональных данных обязательно.</div>
+			</div>
+			<input type="hidden" name="product_id" value="1618">
+			<button type="submit" class="btn main-action p-3">Отправить</button>
+		</form>
 	</div>
 	<div class="col-md-8">
-		<div style="height: 400px;" id="map"></div>
+		<div style="height: 600px;" id="map"></div>
 	</div>
 </div>
 
-<div class="row mt-5 dealers-list">
-	<div class="col-md-4">
-		<h5 class="mb-3">Филиал в Приморском крае</h5>
-		<p class="mb-1">г. Уссурийск, ул. Некрасова, д. 22
-</p>
-		<p class="mb-1"><a class="phone" href="tel:+79247227788">+7 (924) 722-77-88</a></p>
-	</div>
-	<div class="col-md-8">
-		<div style="height: 400px;" id="map2"></div>
-	</div>
-</div>
+
 
 <script>
 	function initMap() {
