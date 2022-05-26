@@ -1585,3 +1585,24 @@ img.desktop_only {
 	max-width: 291px;
 	margin: 0 auto;
 }
+.footer .dropdown-menu {
+	position: initial;
+	padding: 0.5rem 0;
+	background: inherit;
+	border: none;
+}
+.footer .dropdown-item {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	padding: 0.25rem 0;
+}
+.footer .button {
+
+	max-width: 300px;
+	margin-left: auto;
+
+}
+.footer__email {
+	margin: 10px 0;
+	display: block;
+}
