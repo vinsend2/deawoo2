@@ -9,27 +9,35 @@
 <link rel="stylesheet" 	href="template/css/slick.css@ver=1.2.3.css">
 <link rel="stylesheet" 	href="template/css/style.css@ver=1.2.3.css">
 <link rel="stylesheet"	href="template/css/print.css@ver=1.2.3.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com?ver=1.2.3">
+	<link rel="stylesheet" id="conf-css" href="template/css/conf.css" type="text/css" media="all">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;900&display=swap" rel="stylesheet">
+	<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+	/>
+
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	</head>
 
-<body class="top ">
+<body class="top">
 
 	<nav class="navbar navbar-expand-md navbar-light bg-light rounded" aria-label="Twelfth navbar example">
 	<div class="container-fluid">
 		<div class="collapse navbar-collapse justify-content-between" id="navbarsExample10">
 			<span class="top-descriptor">Официальный дистрибьютор марки Daewoo Trucks</span>
 
+			<div>
+			<a class="adress" href="/kontakty/">Ул. Ленина д. 163 оф. 589</a>
+			<a class="email" href="#">info@auto-mo.ru</a>
+	  	</div>
 
-			<a class="header__salon-value" href="/kontakty/">Пн-Вс: 09:00-21:00</a>
-			<a class="phone" href="tel:88002227088">8 800 222-70-88</a>
-
-	
-			<ul class="navbar-nav">
+			<ul class="navbar-nav nav-menu">
 
 				<li class="nav-item"><a class="nav-link" aria-current="page" href="news.html">Новости</a></li>
-				<li class="nav-item"><a class="nav-link" aria-current="page" href="leasing.html">Лизинг</a></li>
+
 				<li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">О компании</a></li>
 				<li class="nav-item"><a class="nav-link" aria-current="page" href="contacts.html">Контакты</a></li>
 
@@ -38,62 +46,106 @@
 	</div>
 </nav>
 
-<nav class="navbar navbar-expand-md navbar-light main-menu" aria-label="Fourth navbar example">
+
+<nav class="navbar navbar-expand-md navbar-light main-menu header" aria-label="Fourth navbar example">
 	<div class="container-fluid">
-		<a class="brand-line" href="index.html"><img src="template/images/logo1line.png" alt="DAEWOO TRUCKS"></a>
+		<div>
+			<span class="top-descriptor--mobile">Официальный дистрибьютор марки Daewoo Trucks</span>
+		<a class="brand-line" href="index.html"><img src="template/images/molnia-logo 1.png" alt="DAEWOO TRUCKS"></a>
+		<a class="brand-line" href="index.html"><img src="template/images/logo 1.svg" alt="DAEWOO TRUCKS"></a>
+		</div>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+
 		<span class="navbar-toggler-icon"></span>
 		</button>
-
+		<a class="phone--mobile" href="tel:88002227088">
+			<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14.8894 5.56349C16.0087 5.7809 17.0374 6.32588 17.8438 7.12869C18.6502 7.9315 19.1977 8.9556 19.416 10.0699M14.8894 1C17.2149 1.25719 19.3835 2.29395 21.039 3.94004C22.6946 5.58612 23.7387 7.7437 24 10.0585M10.5082 14.5342C9.13123 13.1634 8.04393 11.6134 7.24632 9.95953C7.17772 9.81727 7.14341 9.74614 7.11706 9.65614C7.0234 9.33629 7.09068 8.94354 7.28551 8.67266C7.34033 8.59644 7.40583 8.53123 7.53683 8.40081C7.93748 8.00196 8.1378 7.80253 8.26877 7.60199C8.76269 6.84572 8.76269 5.87075 8.26877 5.11448C8.1378 4.91394 7.93748 4.71451 7.53683 4.31565L7.31352 4.09333C6.70449 3.48702 6.39997 3.18387 6.07293 3.01919C5.42251 2.69168 4.65439 2.69168 4.00397 3.01919C3.67693 3.18387 3.37241 3.48702 2.76339 4.09333L2.58274 4.27317C1.9758 4.8774 1.67232 5.17952 1.44055 5.59027C1.18337 6.04606 0.998447 6.75396 1.00001 7.27673C1.00142 7.74785 1.09322 8.06983 1.27681 8.71379C2.26348 12.1745 4.12511 15.4401 6.86171 18.1645C9.59831 20.8889 12.8786 22.7422 16.3548 23.7244C17.0016 23.9072 17.3251 23.9986 17.7983 24C18.3234 24.0015 19.0345 23.8175 19.4923 23.5614C19.9049 23.3307 20.2084 23.0286 20.8153 22.4243L20.996 22.2445C21.605 21.6382 21.9095 21.335 22.0749 21.0094C22.4039 20.3619 22.4039 19.5972 22.0749 18.9497C21.9095 18.6241 21.605 18.321 20.996 17.7147L20.7727 17.4924C20.372 17.0935 20.1717 16.8941 19.9703 16.7637C19.2106 16.272 18.2313 16.272 17.4716 16.7637C17.2701 16.8941 17.0698 17.0935 16.6692 17.4924C16.5382 17.6228 16.4727 17.688 16.3961 17.7426C16.124 17.9365 15.7295 18.0035 15.4082 17.9103C15.3178 17.884 15.2464 17.8499 15.1035 17.7816C13.4422 16.9875 11.8852 15.9051 10.5082 14.5342Z" stroke="#1463AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</a>
 		<div class="collapse navbar-collapse" id="navbarsExample04">
-			<ul class="navbar-nav me-auto mb-2 mb-md-0">
-									
-											<li class="nav-item dropdown">
-							<a class="nav-link" href="index.html#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Модельный ряд</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown04">
-																	<li><a class="dropdown-item" href="chassis/4x2.html">Daewoo Novus 4x2</a></li>
-																	<li><a class="dropdown-item" href="chassis/6x4.html">Daewoo Novus 6x4</a></li>
-																	<li><a class="dropdown-item" href="chassis/8x4.html">Daewoo Novus 8x4</a></li>
-								 
-							</ul>
-						</li>						
-														
-											<li class="nav-item dropdown">
-							<a class="nav-link" href="index.html#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Готовая техника</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown04">
-																	<li><a class="dropdown-item" href="products/pump.html">Автобетононасосы</a></li>
-																	<li><a class="dropdown-item" href="products/mixer.html">Автобетоносмесители</a></li>
-																	<li><a class="dropdown-item" href="products/aerial.html">Автогидроподъемники</a></li>
-																	<li><a class="dropdown-item" href="products/cargo.html">Бортовые платформы с краном</a></li>
-																	<li><a class="dropdown-item" href="products/dump.html">Самосвалы</a></li>
-																	<li><a class="dropdown-item" href="products/van.html">Фургоны</a></li>
-								 
-							</ul>
-						</li>						
-														
-											<li class="nav-item">
-							<a class="nav-link" href="services.html">ТО и Сервис</a>
-						</li>
-				<li class="nav-item">
-					<a class="nav-link" href="zapchasti.html">Запчасти</a>
-				</li>
 
-												</ul>
-			<ul class="navbar-nav mb-2 mb-md-0 d-block d-md-none">
+			<ul class="navbar-nav mb-md-0 d-block d-md-none">
 
 				<li class="nav-item"><a class="nav-link" aria-current="page" href="news.html">Новости</a></li>
+				<li class="nav-item"><a class="nav-link" aria-current="page" href="news.html">Лизинг</a></li>
 				<li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">О компании</a></li>
 				<li class="nav-item"><a class="nav-link" aria-current="page" href="contacts.html">Контакты</a></li>
 
 			</ul>
-			<ul class="navbar-nav mb-2 mb-md-0">
+			<ul class="main-menu__list menu-list">
+
+
+
+
+				<li class="menu-list__item  "><a href="#" class="menu-list__link">Модельный ряд</a>
+					<ul class="second-menu--mobile">
+
+
+						<li>	<div><a href="chassis/4x2.html">Daewoo Novus 4x2</a></div></li>
+						<li>	<div><a href="chassis/6x4.html">Daewoo Novus 6x4</a></div></li>
+						<li>	<div><a href="chassis/8x4.html">Daewoo Novus 8x4</a></div></li>
+
+
+
+
+					</ul>
+
+
+
+
+				</li>
+
+				<li class="menu-list__item  "><a href="#" class="menu-list__link">Каталог техники</a>
+					<ul class="second-menu--mobile">
+
+						<li><a class="dropdown-item" href="products/pump.html">Автобетононасосы</a></li>
+						<li><a class="dropdown-item" href="products/mixer.html">Автобетоносмесители</a></li>
+						<li><a class="dropdown-item" href="products/aerial.html">Автогидроподъемники</a></li>
+						<li><a class="dropdown-item" href="products/cargo.html">Бортовые платформы с краном</a></li>
+						<li><a class="dropdown-item" href="products/dump.html">Самосвалы</a></li>
+						<li><a class="dropdown-item" href="products/van.html">Фургоны</a></li>
+
+
+					</ul>
+
+
+				</li>
+
+				<li class="menu-list__item  "><a href="#" class="menu-list__link">В наличии</a>
+				</li>
+
+
+				<li class="menu-list__item "><a href="services.html" class="menu-list__link">ТО и Сервис</a></li>
+
+
+
+				<li class="menu-list__item "><a href="zapchasti.html" class="menu-list__link">Запчасти</a></li>
+
+
+
+			</ul>
+			<ul class="navbar-nav mb-2 mb-md-0 bar--mobile">
+				<div>
+					<a class="adress" href="/kontakty/">Ул. Ленина д. 163 оф. 589</a>
+					<a class="email" href="#">info@auto-mo.ru</a>
+				</div>
+				<li class="nav-item phone-block">
+
+					<a class="phone" href="tel:88002227088">8 800 222-70-88</a>
+					<a class="header__salon-value" href="/kontakty/">Пн-Вс: 09:00-21:00</a>
+
+
+
+				</li>
+
 				<li class="nav-item"><div class="container h-100" style="position: relative;">
-					<div class="h-100" style="position: absolute;right: 0;">
+					<div class="h-100" style="position: relative;right: 0;">
 						<div class="searchbar">
 							<form action="" method="get">
 								<button class="btn-close close"></button>
 								<input class="search_input" type="text" name="str" placeholder="Поиск...">
-								<button type="submit" class="search_icon toggler"><img src="template/images/icons/search2.svg" width="26" height="26" alt=""></button>
+								<button type="submit" class="search_icon toggler"><img src="template/images/icons/icon-lupa.svg" width="26" height="26" alt=""></button>
 							</form>
 						</div>
 					  </div>
@@ -102,16 +154,87 @@
 
 				<a href="#" data-product-id="1215" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button button_blue-fill header__btn js-question-modal"><span>Заказать звонок</span></a>
 				<!-- <li class="nav-item"><a class="nav-link" href="/leasing"><img src="/template/images/icons/search2.svg" width="26" height="26" alt=""></a></li> -->
-				<li class="nav-item"><a class="nav-link" href="contacts.html"><img class="me-2" src="template/images/icons/marker2.svg" width="26" height="26" alt="">Мы на карте</a></li>
+
 
 			</ul>
 			
 		</div>
 	</div>
+	<div class="header__menu-block container-fluid">
+
+
+
+
+
+		<nav class="main-menu2">
+			<ul class="main-menu__list menu-list">
+
+
+
+
+				<li class="menu-list__item  "><a href="#" class="menu-list__link">Модельный ряд</a>
+					<ul class="second-menu">
+
+						<title class="title mt-5 fw-700">Модельный ряд</title>
+
+
+						<li>	<div><a href="chassis/4x2.html">Daewoo Novus 4x2</a></div></li>
+						<li>	<div><a href="chassis/6x4.html">Daewoo Novus 6x4</a></div></li>
+						<li>	<div><a href="chassis/8x4.html">Daewoo Novus 8x4</a></div></li>
+
+
+
+
+					</ul>
+
+
+
+
+				</li>
+
+				<li class="menu-list__item  "><a href="#" class="menu-list__link">Каталог техники</a>
+					<ul class="second-menu">
+
+						<title class="title mt-5 fw-700">Каталог техники</title>
+
+						<li><a class="dropdown-item" href="products/pump.html">Автобетононасосы</a></li>
+						<li><a class="dropdown-item" href="products/mixer.html">Автобетоносмесители</a></li>
+						<li><a class="dropdown-item" href="products/aerial.html">Автогидроподъемники</a></li>
+						<li><a class="dropdown-item" href="products/cargo.html">Бортовые платформы с краном</a></li>
+						<li><a class="dropdown-item" href="products/dump.html">Самосвалы</a></li>
+						<li><a class="dropdown-item" href="products/van.html">Фургоны</a></li>
+
+
+					</ul>
+
+
+				</li>
+
+				<li class="menu-list__item  "><a href="#" class="menu-list__link">В наличии</a>
+				</li>
+
+
+				<li class="menu-list__item "><a href="services.html" class="menu-list__link">ТО и Сервис</a></li>
+
+
+
+				<li class="menu-list__item "><a href="zapchasti.html" class="menu-list__link">Запчасти</a></li>
+
+
+
+			</ul>
+		</nav>
+		<div class="menu-clear-left"></div>
+
+
+
+	</div>
 </nav>
 
 
-	<div class="container-fluid" id="content">
+
+
+	<div class="container-fluid-slider" id="content">
 		<div class="row">
 						<div class="col-md-12">
 									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -121,10 +244,41 @@
 					</div>
 		<div class="carousel-inner">
 					<div class="carousel-item active">
-				<a href="news/3.html"><img src="upload/banner/11.jpg" class="d-block w-100"></a>
+						<div class="slide-block">
+							<div class="left-block">
+								<p class="title">
+									Парк X5 Logistics пополнился
+									12 грузовиками
+									<span>Daewoo Novus</span>
+								</p>
+								<p class="text">
+									12 грузовых автомобилей на базе шасси Daewoo Novus CH7CA 4х2, оборудованных изотермическими фургонами и гидробортами, а также подготовленными для интеграции с системами мониторинга транспорта
+								</p>
+								<a href="news/3.html" class="button">Подробнее</a>
+							</div>
+						<div class="right-block">
+							<img src="upload/banner/image 3.jpg" class="d-block w-100">
+						</div>
+					</div>
+
 			</div>
 					<div class="carousel-item ">
-				<a href="leasing.html"><img src="https://daewoosale.ru/upload/banner/banner-finance.jpg" class="d-block w-100"></a>
+						<div class="slide-block">
+							<div class="left-block">
+								<p class="title">
+									Парк X5 Logistics пополнился
+									12 грузовиками
+									<span>Daewoo Novus</span>
+								</p>
+								<p class="text">
+									12 грузовых автомобилей на базе шасси Daewoo Novus CH7CA 4х2, оборудованных изотермическими фургонами и гидробортами, а также подготовленными для интеграции с системами мониторинга транспорта
+								</p>
+								<a href="news/3.html" class="button">Подробнее</a>
+							</div>
+							<div class="right-block">
+								<img src="upload/banner/image 3.jpg" class="d-block w-100">
+							</div>
+						</div>
 			</div>
 			</div>
 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -137,45 +291,82 @@
 	</button>
 </div>
 
+							<div class="container-fluid">
 
 							<section class="rs-17">
 								<div class="rs-features ">
 									<div class="container">
 										<div class="row">
+
+											<img src="upload/logo-daewoo 1.png" height="199" width="437"/>
+										<div class="text-block">
+											<h1>Daewoo Trucks</h1>
+
+											<p>
+												Мы работаем на российском рынке с 1997 года, специализируясь на поставке и продаже седельных тягачей,
+												грузовиков с кранами, самосвалов, спецтехники, крановых установок и запчастей из Южной Кореи.
+											</p>
+											<p>
+												Являясь официальным дистрибьютором Tata Daewoo, предлагаем весь модельный ряд грузовой техники Daewoo.
+												Квалифицированный персонал сервисных работников (многие прошли обучение в Корее, в специализированном учебном центре Tata Daewoo) производит все виды работ по сервисному обслуживанию.
+										   </p>
+											<p>
+												Запчасти в наличии (более 3000 наименований) для всех видов грузовиков и спецтехники
+												Корейского производства оптом и в розницу.
+											</p>
+											<p>
+												Мы заинтересованы в долгосрочном сотрудничестве.
+											</p>
 										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-6 col-md-3 feature-block">
-												<div class="feature-item nekoAnim-invisible nekoAnim-animated nekoAnim-fadeInDown nekoAnim-visible" data-nekoanim="fadeInDown" data-nekodelay="400" style="animation-delay: 400ms;">
-													<div class="feature-item--icon">
-														<img src="https://stroytehzakaz.com/wp-content/uploads/2019/07/about1.png" alt="Широкий ассортимент поставляемой продукции">								</div>
-
-													<h4>Широкий ассортимент поставляемой продукции</h4>								<p>Наша компания – профессиональный поставщик всех марок грузовой техники и спецтехники</p>							</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-3 feature-block">
-												<div class="feature-item nekoAnim-invisible nekoAnim-animated nekoAnim-fadeInDown nekoAnim-visible" data-nekoanim="fadeInDown" data-nekodelay="400" style="animation-delay: 400ms;">
-													<div class="feature-item--icon">
-														<img src="https://stroytehzakaz.com/wp-content/uploads/2019/07/about2.png" alt="Официальный дилер компаний: DAEWOO, LiuGong, Shacman">								</div>
-
-													<h4>Официальный дилер компании DAEWOO</h4>								<p>Мы сотрудничаем с ведущими производителями техники и поставляем продукцию от DAEWOO, LiuGong, Shacman</p>							</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-3 feature-block">
-												<div class="feature-item nekoAnim-invisible nekoAnim-animated nekoAnim-fadeInDown nekoAnim-visible" data-nekoanim="fadeInDown" data-nekodelay="400" style="animation-delay: 400ms;">
-													<div class="feature-item--icon">
-														<img src="https://stroytehzakaz.com/wp-content/uploads/2019/07/about3.png" alt="Сотрудничество со всеми лизинговыми компаниями">								</div>
-
-													<h4>Сотрудничество со всеми лизинговыми компаниями</h4>								<p>Работа в связке с лизинговыми компаниями позволяет нам находить оптимальный вариант для клиента</p>							</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-3 feature-block">
-												<div class="feature-item nekoAnim-invisible nekoAnim-animated nekoAnim-fadeInDown nekoAnim-visible" data-nekoanim="fadeInDown" data-nekodelay="400" style="animation-delay: 400ms;">
-													<div class="feature-item--icon">
-														<img src="https://stroytehzakaz.com/wp-content/uploads/2019/07/about4.png" alt="Штат профессиональных специалистов">								</div>
-
-													<h4>Штат профессиональных специалистов</h4>								<p>В компании работают высококомпетентные сотрудники, имеющие большой опыт работы со спецтехникой</p>							</div>
-											</div>
 										</div>
+
+
+										<div class="why__container why">
+
+											<div class="mySwiper">
+												<ul class="why__list swiper-wrapper">
+													<li class="why__item swiper-slide">
+														<img src="upload/image 4.jpg" height="118" width="359"/>
+														<div class="text">
+															<span class="title">Техника в наличии</span>
+															<span>Широкий ассортимент техники всегда есть в наличии. Можно выбрать для разных задач.</span>
+														</div>
+													</li>
+													<li class="why__item swiper-slide">
+														<img src="upload/image 5.jpg" height="118" width="359"/>
+														<div class="text">
+															<span class="title">Официальный дилер </span>
+															<span>Мы сотрудничаем с ведущими производителями техники и поставляем продукцию от DAEWOO, LiuGong, Shacman</span>
+														</div>
+													</li>
+													<li class="why__item swiper-slide">
+														<img src="upload/image 6.jpg" height="118" width="359"/>
+														<div class="text">
+															<span class="title">Сотрудничество с лизинговыми компаниями</span>
+															<span>Работа в связке с лизинговыми компаниями позволяет нам находить оптимальный вариант для клиента</span>
+														</div>
+													</li>
+													<li class="why__item swiper-slide">
+														<img src="upload/image 8.jpg" height="118" width="359"/>
+														<div class="text">
+															<span class="title">Мы на связи</span>
+															<span>В компании работают высококомпетентные сотрудники, имеющие большой опыт работы со спецтехникой</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="bg-block"></div>
+										</div>
+
+
+
 									</div>
 								</div>
 							</section>
+
+
+
+
 
 
 <div class="row banners-main">
@@ -186,7 +377,7 @@
 					<div class="row">
 	<div class="col-md-3 product-card">
 		<a href="products/pump.html">
-			<img class="img-fluid mb-3" src="template/images/icons/pump.png" alt="">
+			<img class="img-fluid mb-3" src="template/images/icons/pump2.png" alt="">
 			<div>Автобетононасосы</div>
 		</a>		
 	</div>
@@ -195,25 +386,25 @@
 		<div class="row d-flex h-100">
 			<div class="col-md-6 product-card mb-2">
 				<a href="products/cargo.html">
-					<img class="img-fluid mb-3" src="template/images/icons/cargo.png" alt="">
+					<img class="img-fluid mb-3" src="template/images/icons/cargo2.png" alt="">
 					<div>Бортовые с краном</div>
 				</a>
 			</div>
 			<div class="col-md-6 product-card mb-2">
 				<a href="products/dump.html">
-					<img class="img-fluid mb-3" src="template/images/icons/dump.png" alt="">
+					<img class="img-fluid mb-3" src="template/images/icons/dump2.png" alt="">
 					<div>Самосвалы</div>
 				</a>		
 			</div>
 			<div class="col-md-6 product-card mb-2">
 				<a href="products/van.html">
-					<img class="img-fluid mb-3" src="template/images/icons/van.png" alt="">
+					<img class="img-fluid mb-3" src="template/images/icons/van2.png" alt="">
 					<div>Фургоны</div>
 				</a>		
 			</div>
 			<div class="col-md-6 product-card mb-2">
 				<a href="products/mixer.html">
-					<img class="img-fluid mb-3" src="template/images/icons/mixer.png" alt="">
+					<img class="img-fluid mb-3" src="template/images/icons/mixer2.png" alt="">
 					<div>Автобетоносмесители</div>
 				</a>		
 			</div>
@@ -221,11 +412,164 @@
 	</div>
 	<div class="col-md-3 product-card">
 		<a href="products/aerial.html">
-			<img class="img-fluid mb-3" src="template/images/icons/lift.png" alt="">
+			<img class="img-fluid mb-3" src="template/images/icons/lift2.png" alt="">
 			<div>Автогидроподъемники</div>
 		</a>		
 	</div>
 </div>
+
+								<section class="section section_gray">
+
+
+									<div class="catalog catalog_p">
+										<div class="catalog__wrap">
+											<div class="title-block">
+											<a href="#" class="all">все наличие</a>
+											<h2 class="title-2 mt-5 fw-700">В наличии</h2>
+											</div>
+											<div class="container">
+												<div class="catalog__slider slider js-slider js-slider-3">
+													<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_644">
+														<div class="catalog__plash" style="background-color: #0066A9">
+															<span>С пробегом</span>
+														</div>
+														<div class="catalog__image">
+															<div class="catalog__image-wrap">
+																<picture>
+																	<source srcset="https://daewoosale.ru/thumb/big/1527/3028.jpg" type="image/webp">
+																	<img
+																			src="https://daewoosale.ru/thumb/big/1527/3028.jpg"
+																			width="246"
+																			height="197"
+																			alt="Hyundai HD78 2013 г.в. "
+																			loading="lazy"
+																	>
+																</picture>
+															</div>
+														</div>
+														<div class="catalog__info">
+															<div class="catalog__info-top">
+																<div class="catalog__item-title">Hyundai HD78 2013 г.в. </div>
+																<div class="catalog__item-descr js-texttailor">Промтоварный фургон на 15 европалет на базе Hyundai HD78.</div>
+															</div>
+															<div class="catalog__info-bottom">
+																<div class="catalog__item-price">Цена по запросу</div>
+																<div class="catalog__button">
+																	<button class="button"><span>Подробнее</span>
+																		<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</a>
+													<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_341">
+														<div class="catalog__image">
+															<div class="catalog__image-wrap">
+																<picture>
+																	<source srcset="https://daewoosale.ru/thumb/big/1043/2584.jpg" type="image/webp">
+																	<img
+																			src="https://daewoosale.ru/thumb/big/1043/2584.jpg"
+																			width="263"
+																			height="197"
+																			alt="Hyundai Mighty EX8 с краном-манипулятором HKTC"
+																			loading="lazy"
+																	>
+																</picture>
+															</div>
+														</div>
+														<div class="catalog__info">
+															<div class="catalog__info-top">
+																<div class="catalog__item-title">Hyundai Mighty EX8 с краном-манипулятором HKTC</div>
+																<div class="catalog__item-descr js-texttailor">Полная масса — 7,8 т.</div>
+															</div>
+															<div class="catalog__info-bottom">
+																<div class="catalog__item-price">Цена по запросу</div>
+																<div class="catalog__button">
+																	<button class="button"><span>Подробнее</span>
+																		<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</a>
+													<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_340">
+														<div class="catalog__image">
+															<div class="catalog__image-wrap">
+																<picture>
+																	<source srcset="https://daewoosale.ru/thumb/big/1043/2586.jpg" type="image/webp">
+																	<img
+																			src="https://daewoosale.ru/thumb/big/1043/2586.jpg"
+																			width="263"
+																			height="197"
+																			alt="Hyundai Mighty EX8 бортовой с тентом"
+																			loading="lazy"
+																	>
+																</picture>
+															</div>
+														</div>
+														<div class="catalog__info">
+															<div class="catalog__info-top">
+																<div class="catalog__item-title">Hyundai Mighty EX8 бортовой с тентом</div>
+																<div class="catalog__item-descr js-texttailor">Полная масса — 7,8 т.</div>
+															</div>
+															<div class="catalog__info-bottom">
+																<div class="catalog__item-price">Цена по запросу</div>
+																<div class="catalog__button">
+																	<button class="button"><span>Подробнее</span>
+																		<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</a>
+													<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_339">
+														<div class="catalog__image">
+															<div class="catalog__image-wrap">
+																<picture>
+																	<source srcset="https://daewoosale.ru/thumb/big/1618/5249.jpg" type="image/webp">
+																	<img
+																			src="https://daewoosale.ru/thumb/big/1618/5249.jpg"
+																			width="263"
+																			height="197"
+																			alt="Hyundai Mighty EX8 с изотермическим фургоном"
+																			loading="lazy"
+																	>
+																</picture>
+															</div>
+														</div>
+														<div class="catalog__info">
+															<div class="catalog__info-top">
+																<div class="catalog__item-title">Hyundai Mighty EX8 с изотермическим фургоном</div>
+																<div class="catalog__item-descr js-texttailor">Полная масса — 7,8 т.</div>
+															</div>
+															<div class="catalog__info-bottom">
+																<div class="catalog__item-price">Цена по запросу</div>
+																<div class="catalog__button">
+																	<button class="button"><span>Подробнее</span>
+																		<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</section>
+
+
+
+
 							<article id="post-984" class="post-984 page type-page status-publish hentry">
 
 								<div class="content__title">
@@ -234,25 +578,35 @@
 
 								<div class="content__body">
 									<div class="textstyle">
-										<link rel="stylesheet" id="conf-css" href="template/css/conf.css" type="text/css" media="all">
+										<div class="gray-bg"></div>
+
 
 										<div class="tab-area">
 											<div class="holder" id="cont_area_block">
 												<div class="frame">
-													<h3>Конфигуратор грузовика <span class="blue">DAEWOO</span>
-														Узнайте стоимость в 3 шага!</h3>
+													<h3><span>Конфигуратор грузовика DAEWOO</span>
+														<p>Узнайте стоимость в 3 шага!</p></h3>
 													<ul class="tabset">
-														<li><span res="tab1" class="active">Тип</span></li>
-														<li class="style01"><span res="tab2">Шасси</span></li>
-														<li class="last"><span res="tab3">Стоимость</span></li>
+														<li><span res="tab1" class="active">Тип</span> <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#E5E9ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+														</li>
+														<li class="style01"><span res="tab2">Шасси</span>
+															<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#E5E9ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</li>
+														<li class="last"><span res="tab3">Стоимость</span>
+														</li>
 													</ul>
 												</div>
 												<div class="info-area">
-													<span class="title">Или просто позвоните нам:</span>
+													<span class="title">Или просто <span class="blue-text">позвоните нам:</span></span>
 													<ul>
 														<li>
 															<div class="description">
-																<span class="title">Отдел продаж</span><span class="tel"><strong><span id="comagic-tel-link">+7 499 507-22-26</span></strong></span>
+																<span class="title">Отдел продаж</span><span class="tel"><strong><span id="comagic-tel-link">8 800 222-70-88</span></strong></span>
+																<a href="#" data-product-id="1215" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button button_blue-fill header__btn js-question-modal"><span>Заказать звонок</span></a>
 															</div>
 														</li>
 													</ul>
@@ -298,7 +652,8 @@
 														<div class="block info-block">
 															<p>Наши менеджеры обработают заказ в ближайшее время и свяжуться с вами указанным способом.</p>
 															<span class="heading">Если вы не хотите ждать, то просто позвоните по телефону:</span>
-															<span class="tel"><span id="comagic-tel-link">+7 499 507-22-26</span></span>
+															<span class="tel"><span id="comagic-tel-link">8 800 222-70-88</span></span>
+															<a href="#" data-product-id="1215" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Заказать звонок</span></a>
 															<!--a rel="call" href="#callme-form" class="link">Обратный звонок</a-->
 														</div>
 													</div>
@@ -358,18 +713,38 @@
 
 
 							</article>
-							<h2 class="mt-5 fw-700">Новости компании</h2>
-					<div class="row">
-			<div class="col-md-3">
+								<div class="title-block">
+									<a href="#" class="all">все новости</a>
+									<h2 class="news-title mt-5 fw-700">Новости компании</h2>
+								</div>
+
+<div class="news-block mySwiper">
+
+	<div class="gray-bg"></div>
+					<div class="row news mySwiper">
+				<div class="swiper-wrapper">
+			<div class="col-md-3 swiper-slide">
+
 			<a href="news/6.html">
 				<img src="upload/news/preview/6-369px.jpg" alt="Завершена отгрузка 96 грузовиков Daewoo Novus для парка X5 Group" class="img-fluid">
 				<div class="news-wrap">
 					<div class="news-date">29.12.2021</div>
-					<div class="news-header"><div>Завершена отгрузка 96 грузовиков Daewoo Novus для парка X5 Group</div></div>
+					<div class="news-header"><div>Завершена отгрузка 96 грузовиков Daewoo Novus для парка X5 Group</div>
+					<div class="news-text">
+						Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+					</div>
+						<div class="catalog__button">
+							<button class="button"><span>Подробнее</span>
+								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
-			<div class="col-md-3">
+			<div class="col-md-3 swiper-slide">
 			<a href="news/5.html">
 				<img src="upload/news/preview/4-369px.jpg" alt="Самосвал Daewoo CR7DS 8x4 успешно прошел испытания 
 на песчано-гравийном карьере
@@ -378,285 +753,228 @@
 					<div class="news-date">05.08.2021</div>
 					<div class="news-header"><div>Самосвал Daewoo CR7DS 8x4 успешно прошел испытания 
 на песчано-гравийном карьере
-</div></div>
+</div>
+						<div class="news-text">
+							Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+						</div>
+						<div class="catalog__button">
+							<button class="button"><span>Подробнее</span>
+								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
-			<div class="col-md-3">
+			<div class="col-md-3 swiper-slide">
 			<a href="news/4.html">
 				<img src="upload/news/preview/3-369px.jpg" alt="Первая бурильно-крановая установка на шасси Daewoo Novus CL8KR" class="img-fluid">
 				<div class="news-wrap">
 					<div class="news-date">25.06.2021</div>
-					<div class="news-header"><div>Первая бурильно-крановая установка на шасси Daewoo Novus CL8KR</div></div>
+					<div class="news-header"><div>Первая бурильно-крановая установка на шасси Daewoo Novus CL8KR</div>
+						<div class="news-text">
+							Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+						</div>
+						<div class="catalog__button">
+							<button class="button"><span>Подробнее</span>
+								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
-			<div class="col-md-3">
+			<div class="col-md-3 swiper-slide">
 			<a href="news/3.html">
 				<img src="upload/news/preview/1-369px.jpg" alt="Парк X5 Logistics пополнился 12 грузовиками Daewoo Novus" class="img-fluid">
 				<div class="news-wrap">
 					<div class="news-date">24.05.2021</div>
-					<div class="news-header"><div>Парк X5 Logistics пополнился 12 грузовиками Daewoo Novus</div></div>
+					<div class="news-header"><div>Парк X5 Logistics пополнился 12 грузовиками Daewoo Novus</div>
+						<div class="news-text">
+							Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+						</div>
+						<div class="catalog__button">
+							<button class="button"><span>Подробнее</span>
+								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 11L6 6L1 1M8 11L13 6L8 1" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
+					</div>
 	</div>
 
-							<section class="section section_gray">
+
+</div>
 
 
-									<div class="catalog catalog_p">
-										<div class="catalog__wrap">
-											<h2 class="title-2 mt-5 fw-700">В наличии</h2>
-											<div class="container">
-											<div class="catalog__slider slider js-slider js-slider-3">
-												<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_644">
-													<div class="catalog__plash" style="background-color: #0066A9">
-														<span>С пробегом</span>
-													</div>
-													<div class="catalog__image">
-														<div class="catalog__image-wrap">
-															<picture>
-																<source srcset="https://daewoosale.ru/thumb/big/1527/3028.jpg" type="image/webp">
-																<img
-																		src="https://daewoosale.ru/thumb/big/1527/3028.jpg"
-																		width="246"
-																		height="197"
-																		alt="Hyundai HD78 2013 г.в. "
-																		loading="lazy"
-																>
-															</picture>
-														</div>
-													</div>
-													<div class="catalog__info">
-														<div class="catalog__info-top">
-															<div class="catalog__item-title">Hyundai HD78 2013 г.в. </div>
-															<div class="catalog__item-descr js-texttailor">Промтоварный фургон на 15 европалет на базе Hyundai HD78.</div>
-														</div>
-														<div class="catalog__info-bottom">
-															<div class="catalog__item-price">Цена по запросу</div>
-															<div class="catalog__button">
-																<button class="button"><span>Подробнее</span></button>
-															</div>
-														</div>
-													</div>
-												</a>
-												<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_341">
-													<div class="catalog__image">
-														<div class="catalog__image-wrap">
-															<picture>
-																<source srcset="https://daewoosale.ru/thumb/big/1043/2584.jpg" type="image/webp">
-																<img
-																		src="https://daewoosale.ru/thumb/big/1043/2584.jpg"
-																		width="263"
-																		height="197"
-																		alt="Hyundai Mighty EX8 с краном-манипулятором HKTC"
-																		loading="lazy"
-																>
-															</picture>
-														</div>
-													</div>
-													<div class="catalog__info">
-														<div class="catalog__info-top">
-															<div class="catalog__item-title">Hyundai Mighty EX8 с краном-манипулятором HKTC</div>
-															<div class="catalog__item-descr js-texttailor">Полная масса — 7,8 т.</div>
-														</div>
-														<div class="catalog__info-bottom">
-															<div class="catalog__item-price">Цена по запросу</div>
-															<div class="catalog__button">
-																<button class="button"><span>Подробнее</span></button>
-															</div>
-														</div>
-													</div>
-												</a>
-												<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_340">
-													<div class="catalog__image">
-														<div class="catalog__image-wrap">
-															<picture>
-																<source srcset="https://daewoosale.ru/thumb/big/1043/2586.jpg" type="image/webp">
-																<img
-																		src="https://daewoosale.ru/thumb/big/1043/2586.jpg"
-																		width="263"
-																		height="197"
-																		alt="Hyundai Mighty EX8 бортовой с тентом"
-																		loading="lazy"
-																>
-															</picture>
-														</div>
-													</div>
-													<div class="catalog__info">
-														<div class="catalog__info-top">
-															<div class="catalog__item-title">Hyundai Mighty EX8 бортовой с тентом</div>
-															<div class="catalog__item-descr js-texttailor">Полная масса — 7,8 т.</div>
-														</div>
-														<div class="catalog__info-bottom">
-															<div class="catalog__item-price">Цена по запросу</div>
-															<div class="catalog__button">
-																<button class="button"><span>Подробнее</span></button>
-															</div>
-														</div>
-													</div>
-												</a>
-												<a class="catalog__item" data-hero-slide href="catalog/product/1041.html" id="bx_3485106786_339">
-													<div class="catalog__image">
-														<div class="catalog__image-wrap">
-															<picture>
-																<source srcset="https://daewoosale.ru/thumb/big/1618/5249.jpg" type="image/webp">
-																<img
-																		src="https://daewoosale.ru/thumb/big/1618/5249.jpg"
-																		width="263"
-																		height="197"
-																		alt="Hyundai Mighty EX8 с изотермическим фургоном"
-																		loading="lazy"
-																>
-															</picture>
-														</div>
-													</div>
-													<div class="catalog__info">
-														<div class="catalog__info-top">
-															<div class="catalog__item-title">Hyundai Mighty EX8 с изотермическим фургоном</div>
-															<div class="catalog__item-descr js-texttailor">Полная масса — 7,8 т.</div>
-														</div>
-														<div class="catalog__info-bottom">
-															<div class="catalog__item-price">Цена по запросу</div>
-															<div class="catalog__button">
-																<button class="button"><span>Подробнее</span></button>
-															</div>
-														</div>
-													</div>
-												</a>
+								<section class="sert">
+									<h2 class="mt-5 fw-700">Сертификаты, лицензии</h2>
+									<div class="sert__content-block">
+										<div class="content">
+											<svg width="349" height="31" viewBox="0 0 349 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M29.5419 5.52239C31.189 5.52239 32.2403 5.35357 33.2215 6.94051C34.0626 8.32487 34.5181 14.6727 34.6583 16.4622L34.9387 23.4853C34.9387 24.7008 35.7447 24.6333 37.3216 24.8021C39.5995 25.0722 43.9098 25.0722 46.0475 24.5657C46.6082 24.4645 46.8535 24.2281 46.8535 23.5528C46.8886 22.4048 46.9236 21.2568 46.9586 20.0075C46.9586 19.5686 47.0287 19.5686 47.0638 19.1971C47.0638 18.8933 47.0287 18.5556 47.0287 18.2855L47.1689 16.5635C47.4142 14.3688 47.6595 8.83134 48.6057 7.00804C49.4467 5.35357 50.8134 5.52239 52.2502 5.52239C54.2477 5.52239 61.677 5.8938 63.1839 6.46781C65.3916 7.31193 64.8309 9.27029 64.4805 10.9248C64.3403 11.6676 64.1651 12.3091 63.9899 12.9844C63.324 15.4155 62.0625 18.1167 60.8009 20.2101C58.5931 23.7554 55.4743 25.4436 50.8835 26.1527C45.5569 26.9968 39.3191 27.0643 34.0275 26.5579C27.4043 25.8826 23.199 24.667 20.1502 18.6907C19.134 16.7323 16.3655 10.0469 17.1715 7.8184C17.4869 6.94051 18.328 6.50157 19.2741 6.26522C20.1853 6.02886 23.164 5.82627 24.2503 5.79251C24.6709 5.75874 24.6709 5.72498 25.1264 5.69121C25.4769 5.69121 25.6871 5.72498 26.0025 5.65745L29.5419 5.52239ZM34.4831 0.0524902H35.99C36.6558 0.0862551 37.3216 0.153785 37.9524 0.457668C39.4593 1.13296 40.5106 2.68615 40.5106 4.34062V21.8308H41.2816C41.2816 17.4751 41.2816 13.1532 41.2816 8.79758C41.2816 6.77169 40.9662 4.10427 41.7021 2.61862C42.438 1.0992 43.8748 0.0524902 45.7321 0.0524902H49.1664C49.3066 0.0524902 49.4117 0.0524902 49.4818 0.0862551C50.2527 0.18755 51.1989 0.0862551 52.04 0.153785C52.7759 0.221314 53.8272 0.255079 54.5281 0.322609C55.4042 0.390138 56.1751 0.356374 57.0512 0.423903C62.7984 0.862846 70.5781 1.20049 76.2201 2.55109C77.4466 2.85497 79.0586 3.42897 80.0048 4.00297C81.0912 4.71203 81.8271 5.72498 81.8271 7.34569C81.8271 10.7222 79.8997 16.7998 78.2176 19.501C77.0261 21.4256 76.115 22.2697 74.1175 23.4177C72.4354 24.3632 70.4029 25.241 68.5455 25.8826L62.483 27.8409C55.5093 29.9344 47.7646 30.9473 40.4405 30.9473C35.99 30.9473 31.9249 30.4408 28.1402 29.8331C26.2829 29.5629 24.3905 29.124 22.6033 28.6851C20.8161 28.2799 19.134 27.8072 17.4519 27.2669C13.3868 25.9839 6.79859 23.958 4.31049 20.5477C3.39935 19.2984 2.66344 17.9478 2.06769 16.3271C1.33178 14.2675 -0.735801 8.29111 0.280465 5.72498C0.911251 4.1718 2.5583 3.56403 4.13527 2.99003C6.13276 2.2472 11.4944 1.47061 14.0526 1.23426C14.5783 1.20049 14.9988 1.20049 15.5245 1.13296C17.0313 0.930375 19.0288 0.930376 20.2554 0.727787L28.0351 0.221314C30.1727 0.12002 32.2753 0.0524902 34.4831 0.0524902V0.0524902Z" fill="#1E67BB"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M183.594 14.5714C183.594 10.9585 187.449 7.75089 191.549 9.57419C192.215 9.84431 192.6 10.2495 193.091 10.7222C196.315 13.7948 194.633 20.1426 188.956 20.1426C185.977 20.1426 183.594 17.3063 183.594 14.5714ZM212.084 20.2776C211.383 20.2776 210.262 19.94 209.771 19.7374C204.55 17.4076 205.776 9.03395 212.225 9.03395C216.92 9.03395 219.549 15.0779 216.044 18.5219C215.414 19.0959 215.203 19.3322 214.397 19.7036C213.837 19.9738 212.89 20.2776 212.084 20.2776ZM177.426 13.2546C177.426 12.5793 177.426 13.052 177.566 12.8831C177.566 13.5584 177.566 13.052 177.426 13.2546ZM179.073 9.70925C179.178 9.23654 179.494 8.62878 179.704 8.18983C180.019 7.6496 180.195 7.14312 180.44 6.67042H174.553L170.172 16.2934C169.822 16.057 169.681 15.6181 169.506 15.2129C169.296 14.7402 169.121 14.4701 168.946 14.0649L167.228 10.3845C167.053 9.64172 168.595 7.58207 168.665 6.67042H160.851C160.991 7.27818 162.147 9.33784 162.498 9.84431L158.993 16.4622L154.963 6.67042H132.64V22.236L125.106 6.67042H115.504C115.469 7.31195 114.873 8.05477 114.593 8.6963C114.277 9.4729 113.997 9.91184 113.682 10.6884L109.862 18.6232C109.406 19.5348 108.145 21.9321 107.97 22.6412H114.137C114.698 21.5945 115.154 20.514 115.749 19.4335C116.31 18.3193 116.801 17.3739 117.396 16.2596C117.747 15.5168 120.305 10.2495 120.725 9.97937C120.761 10.5871 124.3 17.644 124.545 18.6907H116.731C116.801 19.2647 117.501 20.2101 117.817 20.6828L118.938 22.6412H145.361C146.798 22.6412 148.41 22.7087 149.777 22.6412C150.723 22.6074 150.443 22.1685 150.443 21.1893C150.443 20.4465 150.443 19.7036 150.443 18.927H139.194V16.2934H149.216C149.216 15.8882 149.251 13.187 149.181 13.0182C149.006 12.5117 147.183 12.7481 146.062 12.7481C143.784 12.7481 141.506 12.7481 139.194 12.7481V10.1144H150.723L156.19 22.6412H160.851C161.551 21.6282 162.112 20.3114 162.778 19.1972C163.128 18.6232 164.565 16.1583 164.705 15.6519C165.161 15.9895 167.964 21.6282 168.665 22.6412H172.906L174.027 20.2776C174.377 19.501 174.798 18.7245 175.148 17.9141C175.534 17.07 175.849 16.3947 176.235 15.5506L177.216 13.5584C177.356 13.3221 177.286 13.4571 177.426 13.2546C177.426 15.8882 177.426 17.1037 179.003 19.1296C179.424 19.6699 179.809 19.9738 180.265 20.4127C185.802 25.8151 198.382 24.0255 200.31 16.0233L200.415 16.2259C200.87 17.3739 201.011 18.0829 201.922 19.2309C203.429 21.0205 205.601 22.4386 207.984 23.0464C213.451 24.3969 219.444 22.8438 222.247 18.4206C224.525 14.774 223.193 10.6547 220.004 8.15607C218.147 6.67042 215.729 5.725 212.645 5.48865C207.809 5.11723 202.237 7.5483 200.52 12.5455L200.31 13.0182C198.698 6.26524 189.621 4.03676 183.979 6.36653C180.195 7.91971 179.879 9.13525 179.073 9.70925Z" fill="#1E67BA"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M247.163 6.70406C246.988 7.17676 246.953 9.67536 247.093 10.1481L247.198 10.4182L247.268 22.6411H252.91V10.2831C253.997 10.2831 260.41 10.1143 261.145 10.452C262.442 11.0597 263.108 12.6804 261.952 13.9635C261.461 14.5037 260.97 14.8076 259.919 14.8076C257.992 14.8076 256.064 14.8076 254.137 14.8076L258.833 20.6152C259.113 20.9528 259.323 21.2567 259.604 21.5943C259.884 21.8982 260.234 22.2359 260.34 22.6411H267.208L265.386 20.4126C265.07 20.0074 264.825 19.6697 264.51 19.2646C264.159 18.8594 263.914 18.5893 263.634 18.1166C265.211 17.7789 266.752 16.6984 267.523 15.4829C267.699 15.2466 267.804 15.044 267.909 14.8076C267.979 14.6388 268.014 14.6388 268.084 14.4362L268.329 13.9973C268.329 18.4204 268.47 21.2567 272.92 22.9787C274.217 23.4514 275.268 23.5527 276.985 23.5527C280.314 23.5527 282.067 23.9241 285.08 22.3034C287.008 21.2905 288.304 19.2308 288.304 16.3946C288.62 16.8673 288.795 18.9269 291.493 21.1216C295.699 24.5656 303.093 24.6669 307.193 21.7294C307.648 21.4255 307.999 21.2229 308.349 20.8853C308.56 20.6827 308.665 20.5814 308.84 20.4126C309.26 20.0074 309.225 20.0412 309.225 19.8386L309.436 19.5685C308.7 19.1295 307.894 18.7919 307.123 18.4204C306.667 18.2179 306.317 18.049 305.896 17.8464C305.406 17.6101 305.301 17.3737 304.67 17.3062C304.249 19.062 301.271 20.784 298.432 20.1425C293.105 18.9607 292.545 11.026 298.187 9.33771C301.235 8.42606 304.249 10.452 304.67 12.0051C305.266 11.9714 305.511 11.7012 305.931 11.4987L309.366 9.60783C306.001 4.77946 294.367 3.4964 289.636 10.2494C288.795 11.4649 288.865 11.5662 288.445 12.7142L288.339 12.9843C288.339 13.0181 288.304 13.0518 288.304 13.0856V7.10923H281.961C281.961 9.84418 281.961 12.5791 281.961 15.3141C281.961 19.2646 282.172 19.9736 278.107 19.9736C274.252 19.9736 274.252 19.1295 274.252 15.4491C274.252 12.6804 274.252 9.87795 274.252 7.10923H268.329V11.0935C267.874 10.452 267.558 8.865 265.526 7.68323C263.774 6.67029 262.722 6.70406 260.059 6.70406C255.749 6.70406 251.473 6.70406 247.163 6.70406Z" fill="#1D68BA"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M98.9283 18.8258H95.2487V10.2158C97.7719 10.2158 100.47 9.97941 102.643 11.1612C106.042 13.0182 105.131 18.8258 98.9283 18.8258ZM89.3263 22.5062H101.802C106.287 22.5062 110.563 19.2647 110.563 14.7065V13.9299C110.563 11.904 108.741 9.37165 107.479 8.46C105.692 7.14317 103.764 6.5354 100.716 6.5354H89.3263V22.5062Z" fill="#1E67BA"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M328.78 10.6884C328.78 12.3766 329.165 13.6597 330.567 14.6726C331.618 15.4155 332.74 16.0232 334.317 16.2258C336.349 16.4959 340.449 16.0232 341.921 16.4622C342.131 16.4959 342.657 16.8336 342.762 16.9686C343.148 17.3738 343.743 20.1088 341.15 20.1088C339.398 20.1088 336.174 20.3789 335.228 19.7036C334.562 19.2646 334.702 18.5218 334.702 17.5764H328.78C328.78 19.8724 328.99 20.9529 331.198 22.4048C333.721 24.093 337.926 23.6878 341.29 23.6878C350.787 23.6878 351.383 14.47 343.708 12.9844C339.959 12.2753 334.562 13.8285 334.562 11.465C334.562 10.2157 334.527 9.23649 337.155 9.23649C338.382 9.23649 342.937 8.89884 342.937 10.2832V11.2286H348.615C349.911 11.2286 348.194 5.79248 342.272 5.79248H335.508C332.354 5.79248 328.78 7.75084 328.78 10.6884Z" fill="#1E67BA"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M309.436 19.5685L309.225 19.8386C309.541 20.1087 309.401 19.8724 309.506 20.3789C309.506 20.4126 309.506 21.0542 309.506 21.1554C309.471 21.6957 309.506 22.2359 309.506 22.7424H315.428V14.5375L323.348 22.2697C323.733 22.6411 323.663 22.7424 324.364 22.7762C326.187 22.8775 328.394 22.7424 330.287 22.7424C330.146 22.2359 329.726 21.9996 329.34 21.6619L324.259 16.631C323.663 16.057 322.577 15.1115 322.157 14.5375L330.707 6.7041C328.815 6.7041 326.922 6.73787 325.065 6.7041C323.523 6.7041 323.839 6.73787 323.033 7.54822L319.984 10.1819C319.739 10.4182 319.563 10.6208 319.318 10.8572L316.97 12.8493C316.444 13.2545 316.094 13.9635 315.428 14.1324V6.7041H309.506L309.436 19.5685Z" fill="#1E67BA"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M247.198 10.4182L247.093 10.1481C246.953 9.67541 246.988 7.17681 247.163 6.7041H225.786H225.646V10.4182H233.356V22.7424H239.839V10.4182H247.198Z" fill="#1E67BB"/>
+											</svg>
+											<p>
+												Главное сборочное предприятие марки находится на территории промышленного сектора в городе Гунсан, в 240 километрах от столицы Республики Корея.
+											</p>
+											<p>
+												Общая площадь производственных помещений: 791 874 м3.
+											</p>
+											<p>
+												Производственная мощность: 23 000 едницы в год.
+											</p>
+											<p>
+												Сборка всех шасси производится на современном заводе в Южной Корее. Автоматизированное производство, самые высокие стандарты качества и комплектующие, в которых мы абсолютно уверены — залог надежности нашей техники.
+											</p>
+										</div>
+										<div class="slider-block">
+											<div class="mySwiper swiper">
+
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<img src="template/images/sert.jpg" title="Сертификат официального дилера DAEWOO" alt="Сертификат официального дилера DAEWOO" width="238">
+
+													</li>
+													<li class="swiper-slide">
+														<img src="template/images/sert.jpg" title="Сертификат официального дилера DAEWOO"  alt="Сертификат официального дилера DAEWOO" width="238">
+
+													</li>
+													<li class="swiper-slide">
+														<img src="template/images/sert.jpg" title="Сертификат официального дилера DAEWOO" alt="Сертификат официального дилера DAEWOO" width="238">
+
+													</li>
+
+												</ul>
+
 											</div>
+
+											<div class="swiper-button-next">
+
+												<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M17.0001 25.15L24.0001 18.15L17.0001 11.15M36 18.5C36 28.165 28.165 36 18.5 36C8.83502 36 1 28.165 1 18.5C1 8.83502 8.83502 1 18.5 1C28.165 1 36 8.83502 36 18.5Z" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+
+											</div>
+											<div class="swiper-button-prev">
+												<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19.9999 25.15L12.9999 18.15L19.9999 11.15M1 18.5C1 28.165 8.83502 36 18.5 36C28.165 36 36 28.165 36 18.5C36 8.83502 28.165 1 18.5 1C8.83502 1 1 8.83502 1 18.5Z" stroke="#A8BCC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+
 											</div>
 										</div>
 									</div>
-
-							</section>
-
-
-							<div class="reviews">
-								<h2 class="title-2 mt-5 fw-700">Отзывы</h2>
-								<div class="reviews__slider slider js-slider js-slider-3 slick-initialized slick-slider">
-									<div class="slick-list draggable"><div class="slick-track">
-										<div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 236px;"><div>
-											<div class="reviews__item" id="bx_3099439860_7" style="width: 100%; display: inline-block;">
+								</section>
 
 
 
-									<div class="reviews__image">
-										<div class="reviews__image-wrap">
-											<picture>
-												<source srcset="" type="upload/icon-user.png">
-												<img src="upload/icon-user.png" alt="Александр" width="100" height="100" loading="lazy">
-											</picture>
+
+
+
+								<h2 class="reviews-title mt-5 fw-700">Наши клиенты</h2>
+								<div class="news-block reviews">
+
+									<div class="gray-bg"></div>
+									<div class="row news reviews">
+
+										<div class="col-md-3">
+
+											<a href="news/6.html">
+												<img src="upload/news/preview/6-369px.jpg" alt="Завершена отгрузка 96 грузовиков Daewoo Novus для парка X5 Group" class="img-fluid">
+												<div class="news-wrap">
+													<div class="news-date">29.12.2021</div>
+													<div class="news-header"><div>Hyundai HD78 2013 г.в</div>
+														<div class="news-text">
+															Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+														</div>
+
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-3">
+											<a href="news/5.html">
+												<img src="upload/news/preview/4-369px.jpg" alt="Самосвал Daewoo CR7DS 8x4 успешно прошел испытания
+на песчано-гравийном карьере
+" class="img-fluid">
+												<div class="news-wrap">
+													<div class="news-date">05.08.2021</div>
+													<div class="news-header"><div>Hyundai HD78 2013 г.в
+													</div>
+														<div class="news-text">
+															Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+														</div>
+
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-3">
+											<a href="news/4.html">
+												<img src="upload/news/preview/3-369px.jpg" alt="Первая бурильно-крановая установка на шасси Daewoo Novus CL8KR" class="img-fluid">
+												<div class="news-wrap">
+													<div class="news-date">25.06.2021</div>
+													<div class="news-header"><div>Hyundai HD78 2013 г.в.</div>
+														<div class="news-text">
+															Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+														</div>
+
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-3">
+											<a href="news/3.html">
+												<img src="upload/news/preview/1-369px.jpg" alt="Парк X5 Logistics пополнился 12 грузовиками Daewoo Novus" class="img-fluid">
+												<div class="news-wrap">
+													<div class="news-date">24.05.2021</div>
+													<div class="news-header"><div>Hyundai HD78 2013 г.в.</div>
+														<div class="news-text">
+															Транспортная компания X5 Transport (входит в X5 Group) пополнит свой парк 96 машинами...
+														</div>
+
+													</div>
+												</div>
+											</a>
 										</div>
 									</div>
-									<div class="reviews__info">
-										<div class="reviews__info-top">
-											<div class="reviews__name">Александр</div>
-											<div class="reviews__text">покупка крана манипулятора HYUNDAI HD 78 спасибо менеджерам ЖИЖЫ-АВТО за помощь в правильном выборе крана манипулятора! Довольны! обратимся еще!</div>
-										</div>
-										<div class="reviews__info-bottom">
-											<div class="reviews__date">02.04.2021</div>
-										</div>
-									</div>
-								</div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 236px;"><div><div class="reviews__item" id="bx_3099439860_8" style="width: 100%; display: inline-block;">
 
 
-
-									<div class="reviews__image">
-										<div class="reviews__image-wrap">
-											<picture>
-												<source srcset="upload/icon-user.png" type="image/webp">
-												<img src="upload/icon-user.png" alt="Сергей" width="100" height="100" loading="lazy">
-											</picture>
-										</div>
-									</div>
-									<div class="reviews__info">
-										<div class="reviews__info-top">
-											<div class="reviews__name">Сергей</div>
-											<div class="reviews__text">Был у ребят на сервисе на HD-78, проблемы и попливной мастер был И…ь, хочу выразить благодарность за быстрое решение проблемы, до них кто что только не ремонтировал месяц мучили в разных сервисах а там поменяли какой то датчик, промыли топливную и все за разумные в сравнении деньги. Большое спасибо</div>
-										</div>
-										<div class="reviews__info-bottom">
-											<div class="reviews__date">13.03.2021</div>
-										</div>
-									</div>
-								</div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 236px;"><div><div class="reviews__item" id="bx_3099439860_6" style="width: 100%; display: inline-block;">
-
-
-
-									<div class="reviews__image">
-										<div class="reviews__image-wrap">
-											<picture>
-												<source srcset="upload/icon-user.png" type="image/webp">
-												<img src="upload/icon-user.png" alt="Иван" width="100" height="100" loading="lazy">
-											</picture>
-										</div>
-									</div>
-									<div class="reviews__info">
-										<div class="reviews__info-top">
-											<div class="reviews__name">Иван</div>
-											<div class="reviews__text">Спасибо менеджерам Компании ЖИЖА-АВТО за быстрый подбор крана манипулятора на базе 120 Хендая! Пользуемся машиной 2 год довольны качеством Корейской сборки! Кран Юник 504! Отличный! Спасибо!</div>
-										</div>
-										<div class="reviews__info-bottom">
-											<div class="reviews__date">13.03.2021</div>
-										</div>
-									</div>
-								</div></div></div></div></div></div>
-							</div>
+								</div>
 
 
 
 
-				<div class="mt-4"><div class="row">
+				<div class="mt-4 desc"><div class="row">
 					<div class="inform-area">
 						<div class="holder">
-							<h2><img src="template/images/sert.jpg" title="Сертификат официального дилера DAEWOO" hspace="10" border="0" align="right" alt="Сертификат официального дилера DAEWOO" width="300">«ЖЫЖА-Авто» — официальный дилер DAEWOO</h2>
 
-							<p><strong>Покупая грузовые автомобили DAEWOO у официального дилера «ЖЫЖА-Авто», Вы получаете:</strong></p>
-
-							<ul>
-								<li><strong>ЛИЗИНГ И КРЕДИТ</strong>
-									<br>
-									Сотрудничаем со всеми ведущими лизинговыми и кредитными организациями. Оформляем лизинговый договор с 10% скидкой;</li>
-
-								<li><strong>ДОСТАВКА ДО МЕСТА ЭКСПЛУАТАЦИИ</strong>
-									<br>
-									Доставим автомобиль за короткое время в любую точку России;</li>
-
-								<li><strong>СЕРВИС</strong>
-									<br>
-									Выезд к клиенту, 10 постов, официально аттестованные механики, низкая стоимость нормочаса и установка тахографов;</li>
-
-								<li><strong>РЕГИСТРАЦИЯ В ОРГАНАХ ГИБДД</strong>
-									<br>
-									Получаете готовый автомобиль с номерами (доп. услуга);</li>
-
-								<li><strong>НАДЕЖНОСТЬ И КОНТРОЛЬ</strong>
-									<br>
-									Проверка автомобилей на всех стадиях;</li>
-
-								<li><strong>БОЛЬШОЙ СКЛАД</strong>
-									<br>
-									Не нужно ждать - все уже у нас на стоянке и готово к поставке;</li>
-							</ul>
-
-
-							<p><b>Вся предлагаемая нами техника базируется на шасси DAEWOO Novus SE.</b></p>
+							<p class="title"><b>Вся предлагаемая нами техника базируется на шасси DAEWOO Novus SE.</b></p>
 
 							<p>Максимальная конструктивно допустимая грузоподъемность шасси в зависимости от колесной формулы:</p>
 
 							<p> </p>
 
 							<ul>
-								<li><b>4×2 — полна масса до 12 000 кг,</b></li>
 
-								<li><b>4×2 — полна масса&nbsp;до 16 000 кг,</b></li>
+								<li>4×2 — полна масса&nbsp;до 18 000 кг,</li>
 
-								<li><b>4×2 — полна масса&nbsp;до 18 000 кг,</b></li>
+								<li>6×4 — полна масса&nbsp;до 31 000 кг,</li>
 
-								<li><b>6×4 — полна масса&nbsp;до 31 000 кг,</b></li>
-
-								<li><b>8×4 — полна масса&nbsp;до 36 000 кг. </b></li>
+								<li>8×4 — полна масса&nbsp;до 36 000 кг.</li>
 							</ul>
 							<p></p>
 
@@ -718,8 +1036,46 @@
 			<div id="map-yandex" class="map__wrap"></div>
 		</div>
 	</div>
-	<div class="footer bg-light pt-5 pb-5">
+	<div class="footer bg-light pb-5">
+		<div class="header__menu-block container-fluid">
 
+
+
+
+
+			<nav class="main-menu2">
+				<ul class="main-menu__list menu-list menu-footer">
+
+					<div>
+					<li class="menu-list__item  "><a href="#" class="menu-list__link">Новости</a>
+
+					</li>
+
+					<li class="menu-list__item  "><a href="#" class="menu-list__link">Лизинг</a>
+
+					</li>
+
+					<li class="menu-list__item  "><a href="#" class="menu-list__link">О компании</a>
+					</li>
+
+
+					<li class="menu-list__item "><a href="services.html" class="menu-list__link">Контакты</a></li>
+
+
+					</div>
+					<div>
+						<a class="adress" href="/kontakty/">Ул. Ленина д. 163 оф. 589</a>
+						<a class="email" href="#">info@auto-mo.ru</a>
+					</div>
+				</ul>
+
+
+			</nav>
+			<div class="menu-clear-left"></div>
+
+
+
+		</div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-9">
@@ -752,22 +1108,91 @@
                             
                 <li class="pe-4 pb-2"><a href="contacts.html">Запчасти</a></li>
             
-        </ul>				<p>© 2022 ЖИЖА-АВТО Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.<br>
+        </ul>				<p>© 2022 Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.<br>
 					<a class="footer-link" href="privacy.html">Политика в отношении обработки персональных данных</a></p>
 			</div>
-			<div class="col-md-3 text-md-end">
+			<div class="col-md-3 text-md-end footer__right-block">
+				<ul class="navbar-nav mb-2 mb-md-0 navbar">
+					<li class="nav-item phone-block">
+						<a class="phone" href="tel:88002227088">8 800 222-70-88</a>
+						<a class="header__salon-value" href="/kontakty/">Пн-Вс: 09:00-21:00</a>
+					</li>
 
-				<a class="phone" href="tel:88002227088">8 800 222-70-88</a>
-				<p><a href="#" data-product-id="1215" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Заказать звонок</span></a></p>
-				<p class="footer__adr">г.&nbsp;Челябинск, пос.&nbsp;Сельхозтехника, Домодедовское шоссе,&nbsp;д.5, здание комбайновое депо</p>
-				<a class="footer__email" href="mailto:info@auto-mo.ru">E-mail: info@auto-mo.ru</a>
 
-				<div class="mt-3">
-					<a class="social vk me-2" href="https://vk.com/daewootrucks_rus" rel="nofollow"><img src="template/images/icons/vk.svg" width="30" height="30" alt=""></a>
-					<a class="social telegram me-2" href="https://t.me/daewootrucks" rel="nofollow"><img src="template/images/icons/telegram.svg" width="30" height="30" alt=""></a>
-										<a class="social youtube" href="https://www.youtube.com/channel/UCZ_STo1f6wRy5InHYG4ohng" rel="nofollow"><img src="template/images/icons/youtube.svg" width="30" height="30" alt=""></a>
+
+					<a href="#" data-product-id="1215" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button button_blue-fill header__btn js-question-modal"><span>Заказать звонок</span></a>
+					<!-- <li class="nav-item"><a class="nav-link" href="/leasing"><img src="/template/images/icons/search2.svg" width="26" height="26" alt=""></a></li> -->
+
+
+				</ul>
+
+				<div class="footer__daewoo-logo">
+					<div>
+					<p>Официальный дистрибьютор марки Daewoo Trucks</p>
+					<svg width="349" height="31" viewBox="0 0 349 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_60_15)">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M29.5419 5.52263C31.189 5.52263 32.2403 5.35381 33.2215 6.94076C34.0626 8.32511 34.5181 14.6729 34.6583 16.4624L34.9387 23.4855C34.9387 24.7011 35.7447 24.6335 37.3216 24.8023C39.5995 25.0725 43.9098 25.0725 46.0475 24.566C46.6082 24.4647 46.8535 24.2283 46.8535 23.553C46.8886 22.405 46.9236 21.257 46.9586 20.0077C46.9586 19.5688 47.0287 19.5688 47.0638 19.1974C47.0638 18.8935 47.0287 18.5559 47.0287 18.2857L47.1689 16.5637C47.4142 14.369 47.6595 8.83159 48.6057 7.00829C49.4467 5.35381 50.8134 5.52263 52.2502 5.52263C54.2477 5.52263 61.677 5.89405 63.1839 6.46805C65.3916 7.31217 64.8309 9.27053 64.4805 10.925C64.3403 11.6678 64.1651 12.3094 63.9899 12.9847C63.324 15.4157 62.0625 18.1169 60.8009 20.2103C58.5931 23.7556 55.4743 25.4439 50.8835 26.1529C45.5569 26.9971 39.3191 27.0646 34.0275 26.5581C27.4043 25.8828 23.199 24.6673 20.1502 18.6909C19.134 16.7326 16.3655 10.0471 17.1715 7.81864C17.4869 6.94076 18.328 6.50181 19.2741 6.26546C20.1853 6.02911 23.164 5.82652 24.2503 5.79275C24.6709 5.75899 24.6709 5.72522 25.1264 5.69146C25.4769 5.69146 25.6871 5.72522 26.0025 5.65769L29.5419 5.52263ZM34.4831 0.0527344H35.99C36.6558 0.0864992 37.3216 0.154029 37.9524 0.457912C39.4593 1.13321 40.5106 2.68639 40.5106 4.34087V21.831H41.2816C41.2816 17.4754 41.2816 13.1535 41.2816 8.79782C41.2816 6.77193 40.9662 4.10451 41.7021 2.61886C42.438 1.09944 43.8748 0.0527344 45.7321 0.0527344H49.1664C49.3066 0.0527344 49.4117 0.0527344 49.4818 0.0864992C50.2527 0.187794 51.1989 0.0864992 52.04 0.154029C52.7759 0.221558 53.8272 0.255323 54.5281 0.322853C55.4042 0.390383 56.1751 0.356618 57.0512 0.424147C62.7984 0.86309 70.5781 1.20074 76.2201 2.55133C77.4466 2.85521 79.0586 3.42922 80.0048 4.00322C81.0912 4.71228 81.8271 5.72522 81.8271 7.34594C81.8271 10.7224 79.8997 16.8001 78.2176 19.5013C77.0261 21.4259 76.115 22.27 74.1175 23.418C72.4354 24.3634 70.4029 25.2413 68.5455 25.8828L62.483 27.8412C55.5093 29.9346 47.7646 30.9475 40.4405 30.9475C35.99 30.9475 31.9249 30.4411 28.1402 29.8333C26.2829 29.5632 24.3905 29.1242 22.6033 28.6853C20.8161 28.2801 19.134 27.8074 17.4519 27.2672C13.3868 25.9841 6.79859 23.9582 4.31049 20.548C3.39935 19.2987 2.66344 17.9481 2.06769 16.3274C1.33178 14.2677 -0.735801 8.29135 0.280465 5.72522C0.911251 4.17204 2.5583 3.56428 4.13527 2.99027C6.13276 2.24745 11.4944 1.47086 14.0526 1.2345C14.5783 1.20074 14.9988 1.20074 15.5245 1.13321C17.0313 0.93062 19.0288 0.93062 20.2554 0.728031L28.0351 0.221558C30.1727 0.120264 32.2753 0.0527344 34.4831 0.0527344V0.0527344Z" fill="#1E67BB"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M183.594 14.5714C183.594 10.9585 187.449 7.75089 191.549 9.57419C192.215 9.84431 192.6 10.2495 193.091 10.7222C196.315 13.7948 194.633 20.1426 188.956 20.1426C185.977 20.1426 183.594 17.3063 183.594 14.5714ZM212.084 20.2776C211.383 20.2776 210.262 19.94 209.771 19.7374C204.55 17.4076 205.777 9.03395 212.225 9.03395C216.92 9.03395 219.549 15.0779 216.044 18.5219C215.414 19.0959 215.203 19.3322 214.397 19.7036C213.837 19.9738 212.89 20.2776 212.084 20.2776ZM177.426 13.2546C177.426 12.5793 177.426 13.052 177.566 12.8831C177.566 13.5584 177.566 13.052 177.426 13.2546ZM179.073 9.70925C179.178 9.23654 179.494 8.62878 179.704 8.18983C180.019 7.6496 180.195 7.14312 180.44 6.67042H174.553L170.172 16.2934C169.822 16.057 169.682 15.6181 169.506 15.2129C169.296 14.7402 169.121 14.4701 168.946 14.0649L167.228 10.3845C167.053 9.64172 168.595 7.58207 168.665 6.67042H160.851C160.991 7.27818 162.147 9.33784 162.498 9.84431L158.993 16.4622L154.963 6.67042H132.64V22.236L125.106 6.67042H115.504C115.469 7.31195 114.873 8.05477 114.593 8.6963C114.277 9.4729 113.997 9.91184 113.682 10.6884L109.862 18.6232C109.406 19.5348 108.145 21.9321 107.97 22.6412H114.137C114.698 21.5945 115.154 20.514 115.749 19.4335C116.31 18.3193 116.801 17.3739 117.396 16.2596C117.747 15.5168 120.305 10.2495 120.726 9.97937C120.761 10.5871 124.3 17.644 124.545 18.6907H116.731C116.801 19.2647 117.501 20.2101 117.817 20.6828L118.938 22.6412H145.361C146.798 22.6412 148.41 22.7087 149.777 22.6412C150.723 22.6074 150.443 22.1685 150.443 21.1893C150.443 20.4465 150.443 19.7036 150.443 18.927H139.194V16.2934H149.216C149.216 15.8882 149.251 13.187 149.181 13.0182C149.006 12.5117 147.183 12.7481 146.062 12.7481C143.784 12.7481 141.506 12.7481 139.194 12.7481V10.1144H150.723L156.19 22.6412H160.851C161.551 21.6282 162.112 20.3114 162.778 19.1972C163.128 18.6232 164.565 16.1583 164.705 15.6519C165.161 15.9895 167.964 21.6282 168.665 22.6412H172.906L174.027 20.2776C174.377 19.501 174.798 18.7245 175.148 17.9141C175.534 17.07 175.849 16.3947 176.235 15.5506L177.216 13.5584C177.356 13.3221 177.286 13.4571 177.426 13.2546C177.426 15.8882 177.426 17.1037 179.003 19.1296C179.424 19.6699 179.809 19.9738 180.265 20.4127C185.802 25.8151 198.382 24.0255 200.31 16.0233L200.415 16.2259C200.87 17.3739 201.011 18.0829 201.922 19.2309C203.429 21.0205 205.601 22.4386 207.984 23.0464C213.451 24.3969 219.444 22.8438 222.247 18.4206C224.525 14.774 223.193 10.6547 220.004 8.15607C218.147 6.67042 215.729 5.725 212.645 5.48865C207.809 5.11723 202.237 7.5483 200.52 12.5455L200.31 13.0182C198.698 6.26524 189.621 4.03676 183.979 6.36653C180.195 7.91971 179.879 9.13525 179.073 9.70925Z" fill="#1E67BA"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M247.163 6.7043C246.988 7.17701 246.953 9.6756 247.093 10.1483L247.198 10.4184L247.268 22.6413H252.91V10.2834C253.997 10.2834 260.41 10.1145 261.145 10.4522C262.442 11.06 263.108 12.6807 261.951 13.9637C261.461 14.504 260.97 14.8079 259.919 14.8079C257.992 14.8079 256.064 14.8079 254.137 14.8079L258.833 20.6154C259.113 20.9531 259.323 21.2569 259.604 21.5946C259.884 21.8985 260.234 22.2361 260.339 22.6413H267.208L265.386 20.4128C265.07 20.0076 264.825 19.67 264.51 19.2648C264.159 18.8596 263.914 18.5895 263.634 18.1168C265.211 17.7792 266.752 16.6987 267.523 15.4832C267.699 15.2468 267.804 15.0442 267.909 14.8079C267.979 14.639 268.014 14.639 268.084 14.4364L268.329 13.9975C268.329 18.4207 268.47 21.2569 272.92 22.9789C274.217 23.4517 275.268 23.5529 276.985 23.5529C280.314 23.5529 282.067 23.9244 285.08 22.3036C287.008 21.2907 288.304 19.231 288.304 16.3948C288.62 16.8675 288.795 18.9272 291.493 21.1219C295.699 24.5659 303.093 24.6672 307.193 21.7296C307.648 21.4258 307.999 21.2232 308.349 20.8855C308.56 20.6829 308.665 20.5816 308.84 20.4128C309.26 20.0076 309.225 20.0414 309.225 19.8388L309.436 19.5687C308.7 19.1298 307.894 18.7921 307.123 18.4207C306.667 18.2181 306.317 18.0493 305.896 17.8467C305.406 17.6103 305.301 17.374 304.67 17.3065C304.249 19.0622 301.271 20.7842 298.432 20.1427C293.105 18.9609 292.545 11.0262 298.187 9.33796C301.235 8.42631 304.249 10.4522 304.67 12.0054C305.265 11.9716 305.511 11.7015 305.931 11.4989L309.366 9.60807C306.001 4.7797 294.367 3.49664 289.636 10.2496C288.795 11.4651 288.865 11.5664 288.444 12.7144L288.339 12.9846C288.339 13.0183 288.304 13.0521 288.304 13.0859V7.10948H281.961C281.961 9.84443 281.961 12.5794 281.961 15.3143C281.961 19.2648 282.172 19.9739 278.107 19.9739C274.252 19.9739 274.252 19.1298 274.252 15.4494C274.252 12.6807 274.252 9.87819 274.252 7.10948H268.329V11.0937C267.874 10.4522 267.558 8.86525 265.526 7.68348C263.774 6.67053 262.722 6.7043 260.059 6.7043C255.749 6.7043 251.473 6.7043 247.163 6.7043Z" fill="#1D68BA"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M98.9283 18.826H95.2487V10.216C97.7719 10.216 100.47 9.97966 102.643 11.1614C106.042 13.0185 105.131 18.826 98.9283 18.826ZM89.3264 22.5064H101.802C106.287 22.5064 110.563 19.265 110.563 14.7067V13.9301C110.563 11.9043 108.741 9.37189 107.479 8.46024C105.692 7.14341 103.764 6.53564 100.716 6.53564H89.3264V22.5064Z" fill="#1E67BA"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M328.78 10.6889C328.78 12.3771 329.165 13.6602 330.567 14.6731C331.618 15.4159 332.74 16.0237 334.317 16.2263C336.349 16.4964 340.449 16.0237 341.921 16.4627C342.131 16.4964 342.657 16.8341 342.762 16.9691C343.148 17.3743 343.743 20.1093 341.15 20.1093C339.398 20.1093 336.174 20.3794 335.228 19.7041C334.562 19.2651 334.702 18.5223 334.702 17.5769H328.78C328.78 19.8729 328.99 20.9534 331.198 22.4053C333.721 24.0935 337.926 23.6883 341.29 23.6883C350.787 23.6883 351.383 14.4705 343.708 12.9849C339.959 12.2758 334.562 13.829 334.562 11.4655C334.562 10.2162 334.527 9.23698 337.155 9.23698C338.382 9.23698 342.937 8.89933 342.937 10.2837V11.2291H348.615C349.911 11.2291 348.194 5.79297 342.272 5.79297H335.508C332.354 5.79297 328.78 7.75133 328.78 10.6889Z" fill="#1E67BA"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M309.436 19.569L309.225 19.8391C309.541 20.1092 309.401 19.8729 309.506 20.3793C309.506 20.4131 309.506 21.0546 309.506 21.1559C309.471 21.6962 309.506 22.2364 309.506 22.7429H315.428V14.538L323.348 22.2702C323.733 22.6416 323.663 22.7429 324.364 22.7766C326.187 22.8779 328.394 22.7429 330.287 22.7429C330.146 22.2364 329.726 22.0001 329.34 21.6624L324.259 16.6314C323.663 16.0574 322.577 15.112 322.157 14.538L330.707 6.70459C328.815 6.70459 326.922 6.73835 325.065 6.70459C323.523 6.70459 323.839 6.73835 323.033 7.54871L319.984 10.1824C319.739 10.4187 319.563 10.6213 319.318 10.8577L316.97 12.8498C316.444 13.255 316.094 13.964 315.428 14.1329V6.70459H309.506L309.436 19.569Z" fill="#1E67BA"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M247.198 10.4187L247.093 10.1486C246.953 9.67589 246.988 7.1773 247.163 6.70459H225.786H225.646V10.4187H233.356V22.7429H239.839V10.4187H247.198Z" fill="#1E67BB"/>
+						</g>
+						<defs>
+							<clipPath id="clip0_60_15">
+								<rect width="349" height="31" fill="white"/>
+							</clipPath>
+						</defs>
+					</svg>
+					</div>
+					<svg width="92" height="65" viewBox="0 0 92 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0.026062 21.5928H36.2451L40.9592 28.4408L46.3015 21.5928H83.7802V44.1256H48.2502L40.0162 33.4729L32.0339 44.1256H0.026062V21.5928Z" fill="#2B2A29"/>
+						<path d="M16.065 34.9259H10.0472V29.6299H8.76709V36.0881H16.065V34.9259ZM29.6626 29.6299H28.3821V34.9259H21.9802V29.6299H20.7001V34.9259C20.7001 34.9259 20.7001 36.0881 21.8525 36.0881H28.5102C29.7009 36.0881 29.6626 34.9259 29.6626 34.9259V29.6299ZM58.7521 29.6299H52.0944C50.942 29.6299 50.942 30.7921 50.942 30.7921V36.0881H52.2222V34.0214H58.624V36.0881H59.9045V30.7921C59.9045 30.7921 59.9045 29.6299 58.7521 29.6299ZM52.2222 30.7921H58.624V32.8588H52.2222V30.7921ZM75.038 36.0881L73.5016 34.0214C74.7822 34.0214 74.7822 32.8588 74.7822 32.8588V30.7921C74.7822 30.7921 74.7822 29.6299 73.5016 29.6299H65.8197V36.0881H67.0998V34.0214H72.0934L73.6298 36.0881H75.038ZM73.5016 32.8588H67.0998V30.7921H73.5016V32.8588Z" fill="#FEFEFE"/>
+						<path d="M91.9005 42.4984C91.9005 42.7745 91.8626 43.0272 91.7867 43.2572C91.7104 43.4872 91.5567 43.6731 91.3249 43.8149C91.0934 43.9566 90.7419 44.0277 90.2708 44.0277H86.4527C86.0424 44.0277 85.7289 43.9512 85.5125 43.7977C85.2957 43.6442 85.1478 43.4357 85.0677 43.1709C84.9879 42.9065 84.9481 42.6019 84.9481 42.257C84.9481 41.9118 84.9899 41.6072 85.0735 41.3428C85.1571 41.0784 85.3054 40.8694 85.5179 40.716C85.7308 40.5629 86.0424 40.4863 86.4527 40.4863H87.3415V41.3486H86.4299C86.164 41.3486 85.9646 41.3869 85.8314 41.4634C85.6987 41.54 85.6112 41.6454 85.5694 41.7798C85.5276 41.9137 85.5067 42.0692 85.5067 42.2453C85.5067 42.4218 85.5276 42.5769 85.5694 42.7112C85.6112 42.8452 85.6987 42.9506 85.8314 43.0271C85.9646 43.1041 86.164 43.1424 86.4299 43.1424H90.4419C90.7152 43.1424 90.9184 43.1041 91.0516 43.0271C91.1844 42.9506 91.2718 42.8452 91.3136 42.7112C91.3555 42.5769 91.3764 42.4218 91.3764 42.2453C91.3764 41.9848 91.2966 41.77 91.1371 41.6013C90.9772 41.433 90.7458 41.3486 90.4419 41.3486H89.0626V42.1418H88.5385V40.4863H91.7751V41.153L91.1596 41.199C91.2053 41.2221 91.249 41.2471 91.2908 41.2736C91.3326 41.3006 91.3686 41.3256 91.3992 41.3486C91.5436 41.4482 91.6632 41.59 91.758 41.7739C91.8533 41.9579 91.9005 42.1992 91.9005 42.4984ZM91.7751 39.3132H85.0394V37.0828C85.0394 36.6763 85.1323 36.3564 85.3185 36.1225C85.5047 35.8889 85.7877 35.7718 86.1678 35.7718H87.239C87.6265 35.7718 87.9303 35.8831 88.151 36.1053C88.3712 36.3275 88.4889 36.638 88.504 37.0367C88.5195 36.7837 88.6031 36.5978 88.7549 36.479C88.907 36.3603 89.1424 36.2549 89.4617 36.1627L91.7751 35.4843V36.4501L89.5186 37.0367C89.3816 37.075 89.2527 37.1211 89.1311 37.1746C89.0096 37.2285 88.9124 37.2933 88.8404 37.3702C88.768 37.4468 88.732 37.5503 88.732 37.6807V38.3934H91.7751V39.3132ZM88.1165 38.3934V37.4968C88.1165 37.2129 88.0484 37.0004 87.9114 36.8586C87.7747 36.7165 87.5394 36.6458 87.2049 36.6458H86.3157C86.0424 36.6458 85.845 36.713 85.723 36.8469C85.6015 36.9813 85.5407 37.1441 85.5407 37.3355V38.3934H88.1165ZM91.9121 32.8744C91.9121 33.2192 91.8722 33.5219 91.7921 33.7828C91.7124 34.0433 91.5471 34.2502 91.2966 34.4037C91.0458 34.5568 90.6695 34.6334 90.1682 34.6334H86.4527C86.0347 34.6334 85.7176 34.5568 85.5008 34.4037C85.2845 34.2502 85.1381 34.0413 85.0623 33.7769C84.986 33.5125 84.9481 33.2079 84.9481 32.8627C84.9481 32.5178 84.9879 32.2132 85.0677 31.9488C85.1478 31.684 85.2938 31.4755 85.5067 31.322C85.7196 31.1689 86.0347 31.092 86.4527 31.092H90.1682C90.6772 31.092 91.0554 31.1689 91.302 31.322C91.549 31.4755 91.7124 31.686 91.7921 31.9543C91.8722 32.2226 91.9121 32.5292 91.9121 32.8744ZM91.3764 32.8744C91.3764 32.6979 91.3535 32.5428 91.3078 32.4085C91.2622 32.2745 91.1731 32.1691 91.04 32.0925C90.9072 32.0156 90.7078 31.9773 90.4419 31.9773H86.4299C86.1717 31.9773 85.9758 32.0156 85.8431 32.0925C85.7099 32.1691 85.6205 32.2745 85.5752 32.4085C85.5295 32.5428 85.5067 32.6979 85.5067 32.8744C85.5067 33.0505 85.5295 33.204 85.5752 33.3341C85.6205 33.4645 85.7099 33.568 85.8431 33.6445C85.9758 33.7215 86.1717 33.7597 86.4299 33.7597H90.4419C90.7078 33.7597 90.9072 33.7215 91.04 33.6445C91.1731 33.568 91.2622 33.4645 91.3078 33.3341C91.3535 33.204 91.3764 33.0505 91.3764 32.8744ZM91.9121 28.1716C91.9121 28.4168 91.8931 28.6468 91.8548 28.8612C91.8169 29.076 91.7429 29.2619 91.6326 29.4189C91.5227 29.5763 91.3593 29.7009 91.1425 29.7927C90.9261 29.8848 90.6354 29.9309 90.2708 29.9309H85.0394V29.0339H90.4759C90.719 29.0339 90.9033 28.9936 91.0287 28.9132C91.1542 28.8327 91.2393 28.7273 91.285 28.5968C91.3307 28.4668 91.3535 28.3246 91.3535 28.1716C91.3535 28.0181 91.3307 27.8744 91.285 27.7404C91.2393 27.6061 91.1542 27.4991 91.0287 27.4182C90.9033 27.3378 90.719 27.2975 90.4759 27.2975H85.0394V26.4239H90.2708C90.6277 26.4239 90.9165 26.468 91.1371 26.5559C91.3574 26.6442 91.5227 26.7668 91.6326 26.9238C91.7429 27.0812 91.8169 27.2671 91.8548 27.4815C91.8931 27.6963 91.9121 27.9263 91.9121 28.1716ZM91.7751 25.1472H85.0394V22.9513C85.0394 22.5451 85.1323 22.2249 85.3185 21.9913C85.5047 21.7574 85.7877 21.6406 86.1678 21.6406H87.3872C87.6532 21.6406 87.904 21.6769 88.1394 21.7496C88.3751 21.8226 88.5648 21.9624 88.7092 22.1694C88.8536 22.3764 88.926 22.6752 88.926 23.0661V24.2162H91.7751V25.1472ZM88.413 24.2162V23.3539C88.413 23.0778 88.3217 22.8708 88.1394 22.733C87.957 22.5947 87.6683 22.526 87.2734 22.526H86.5209C86.1791 22.526 85.9302 22.5892 85.7745 22.7154C85.6189 22.8419 85.5407 23.0013 85.5407 23.1926V24.2162H88.413Z" fill="black"/>
+						<mask id="mask0_91_256" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="17" y="0" width="46" height="65">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M40.1126 35.6156L17.0993 64.8101L37.4838 31.6739L26.8998 15.8057H33.5339L41.0378 27.0562L62.2193 0.185059L43.4575 30.6839L56.2418 49.851H49.6077L40.1126 35.6156Z" fill="#62D8D8"/>
+						</mask>
+						<g mask="url(#mask0_91_256)">
+							<path d="M14.5 4H88.5V99H14.5V4Z" fill="#62D6D6"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M33.4333 75.4459L9.40503 59.7831L24.3508 36.4458L48.3787 52.1086L33.4333 75.4459Z" fill="url(#paint0_linear_91_256)"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M53.2276 -9.019L75.8445 8.64637L58.9801 30.618L36.3635 12.9526L53.2276 -9.019Z" fill="url(#paint1_linear_91_256)"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M73.0541 44.6689L55.8953 67.7377L33.7913 51.1318L50.9501 28.0635L73.0541 44.6689Z" fill="url(#paint2_linear_91_256)"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6.45224 14.9642L28.7406 -3.11968L46.0835 18.4711L23.7952 36.5545L6.45224 14.9642Z" fill="url(#paint3_linear_91_256)"/>
+						</g>
+						<defs>
+							<linearGradient id="paint0_linear_91_256" x1="21.4194" y1="67.6145" x2="36.552" y2="44.3992" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#2B2A29"/>
+								<stop offset="0.164706" stop-color="#252325"/>
+								<stop offset="0.258824" stop-color="#1F1B20"/>
+								<stop offset="1" stop-color="#62D8D8"/>
+							</linearGradient>
+							<linearGradient id="paint1_linear_91_256" x1="64.5359" y1="-0.186334" x2="47.4873" y2="21.6412" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#2B2A29"/>
+								<stop offset="0.164706" stop-color="#252325"/>
+								<stop offset="0.258824" stop-color="#1F1B20"/>
+								<stop offset="1" stop-color="#62D8D8"/>
+							</linearGradient>
+							<linearGradient id="paint2_linear_91_256" x1="64.4747" y1="56.2031" x2="42.2919" y2="39.7036" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#2B2A29"/>
+								<stop offset="0.164706" stop-color="#252325"/>
+								<stop offset="0.258824" stop-color="#1F1B20"/>
+								<stop offset="1" stop-color="#62D8D8"/>
+							</linearGradient>
+							<linearGradient id="paint3_linear_91_256" x1="17.5964" y1="5.92242" x2="35.0447" y2="27.4273" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#2B2A29"/>
+								<stop offset="0.164706" stop-color="#252325"/>
+								<stop offset="0.258824" stop-color="#1F1B20"/>
+								<stop offset="1" stop-color="#62D8D8"/>
+							</linearGradient>
+						</defs>
+					</svg>
+
 				</div>
+
+
 			</div>
+		</div>
 		</div>
 	</div>
 </div>	
@@ -778,7 +1203,7 @@
 	<script src="js/jquery.matchHeight.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/scroll.js"></script>
 	<script type="text/javascript" src="js/conf.js" id="conf-js"></script>
@@ -799,3 +1224,7 @@
 	<!-- /Yandex.Metrika counter -->
 </body>
 </html>
+
+
+
+

@@ -1,9 +1,47 @@
+var swiper = new Swiper(".slider-block .swiper", {
+	slidesPerView: 3,
+	spaceBetween: 25,
+	loop: true,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
+
+
+function sliderInit($swiper_container){
+	if($(window).width() <= 768) {
+
+
+		const swiper = new Swiper(".why__container > .mySwiper", {
+			speed: 1000,
+			resistanceRatio: 0,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+		});
+
+		const swiper2 = new Swiper(".news-block > .mySwiper", {
+			speed: 1000,
+			resistanceRatio: 0,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+		});
+
+
+	}
+}
+
+sliderInit();
+
 $(function() {
 /*	$(document).click(function(event) {
 		if (!$(event.target).closest(".logistics-container").length) {
 			$("body").find(".logistics-container").slideDown();
 		}
 	});*/
+
+
+
 		$("button.toggler").on("click", function (event) {
 			event.preventDefault();
 			var searchbar = $(this).closest(".searchbar");
@@ -616,13 +654,13 @@ var myMapTemp, myPlacemarkTemp;
 
 //Функция создания карты сайта и затем вставки ее в блок с идентификатором &#34;map-yandex&#34;
 function init() {
-	console.log(123321);
+
 	var myMapTemp = new ymaps.Map("map-yandex", {
-		center: [55.119658,61.382751],
+		center: [55.119656,61.382853],
 		zoom: 17,
 		controls: ['zoomControl'],
 	});
-	var myPlacemarkTemp = new ymaps.Placemark([55.119658,61.382751], {
+	var myPlacemarkTemp = new ymaps.Placemark([55.119656,61.382853], {
 		balloonContent: "Тел: +7 (351) 211‒59‒64",
 	}, {
 		// Опции.

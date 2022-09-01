@@ -1,3 +1,25 @@
+$(document).ready(function () {
+    $('.navbar-collapse .menu-list .menu-list__item').on('click', function (e) {
+
+        var next = $(this).find('.second-menu--mobile');
+
+        if (!$(next).is(':visible')) {
+            $(next).slideDown('fast');
+            $(this).addClass('active');
+        } else {
+            $(next).slideUp('fast');
+            $(this).removeClass('active');
+        }
+
+        return false;
+    });
+
+    if (is_mobile) {
+        $('#search-form').prependTo($('.menu__box'));
+    }
+});
+
+
 (function($) {
     $(document).ready(function(){
         if (window.location.hash==='#cont_area'){
